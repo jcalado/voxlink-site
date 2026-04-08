@@ -22,6 +22,8 @@
 
 Android's battery optimization is almost certainly terminating the foreground service. See [Background Operation](/docs/background-operation) for instructions on exempting VoxLink from battery optimization and enabling wake/Wi-Fi locks.
 
+> Enable **Auto-Connect** in **Settings > Connection** to have VoxLink automatically reconnect after an unexpected drop.
+
 ---
 
 ## No Incoming Audio (RX Silent)
@@ -47,7 +49,7 @@ Android's battery optimization is almost certainly terminating the foreground se
 **On receive:**
 
 1. A poor or congested internet connection causes packet loss, which produces choppy audio. Check your signal strength or switch from Wi-Fi to mobile data (or vice versa).
-2. The adaptive jitter buffer and packet loss concealment will mask occasional losses, but sustained high loss rates will still degrade quality.
+2. VoxLink uses a jitter buffer (24-frame capacity) and proactive packet loss concealment (PLC) to mask occasional losses, but sustained high loss rates will still degrade quality.
 3. If other apps also perform poorly, the problem is your network, not VoxLink.
 
 **On transmit (reported by other stations):**

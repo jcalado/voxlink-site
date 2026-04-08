@@ -14,7 +14,7 @@ VoxLink stores all reflector connection details as named profiles so you can swi
 |---|---|
 | **Name** | A friendly label for this profile |
 | **Hostname** | Reflector hostname or IP address |
-| **Port** | TCP port (ask your admin; commonly `5300`) |
+| **Port** | TCP port (default: `5300`) |
 | **Talkgroup** | Talkgroup number to join on connect |
 | **Callsign** | Your callsign as broadcast to other stations |
 | **Auth Key** | HMAC-SHA1 key provided by the reflector administrator |
@@ -49,6 +49,6 @@ Profiles can be transferred between devices as JSON files.
 
 **Export:** Tap **Settings > Profiles > Export**. VoxLink writes a `.json` file to your device's Downloads folder.
 
-**Import:** Tap **Settings > Profiles > Import** and select a previously exported JSON file. Existing profiles with matching names will be overwritten.
+**Import:** Tap **Settings > Profiles > Import** and select a JSON file. VoxLink accepts either a plain array of profiles or an object with a `servers` array (`{"servers": [...]}`). Existing profiles with matching names will be overwritten.
 
 > Use export/import to quickly deploy a pre-configured profile to club members without them having to type in credentials manually.

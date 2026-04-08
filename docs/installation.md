@@ -31,10 +31,12 @@ adb install VoxLink.apk
 
 > You can disable **Install unknown apps** again after installation. Sideloaded builds do not receive automatic Play Store updates — check with your source for new versions.
 
-## Microphone Permission
+## Permissions
 
-VoxLink requires microphone access to transmit audio. On first launch Android will prompt you — tap **Allow**. Without it PTT transmission is disabled.
+**Microphone** (required) — VoxLink needs microphone access to transmit audio. On first launch Android will prompt you — tap **Allow**. Without it PTT transmission is disabled.
 
-To grant the permission after the fact: **Settings > Apps > VoxLink > Permissions > Microphone > Allow**.
+To grant it after the fact: **Settings > Apps > VoxLink > Permissions > Microphone > Allow**.
 
-On Android 13 and higher, VoxLink also requests **Notifications** permission so the persistent connection status notification can be displayed.
+**Notifications** (Android 13+) — VoxLink requests **Notifications** permission so the persistent connection status notification can be displayed.
+
+**Bluetooth** (Android 12+) — If you route audio to a Bluetooth headset or speaker, Android requires the `BLUETOOTH_CONNECT` permission. VoxLink will prompt for this when you first select a Bluetooth output device.

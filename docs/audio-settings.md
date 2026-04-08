@@ -12,7 +12,10 @@ VoxLink uses the **Opus** codec configured as follows:
 |---|---|
 | Sample rate | 16 kHz mono |
 | Frame size | 20 ms |
-| Bitrate | 20 kbps VBR |
+| Bitrate | 20 kbps |
+| Complexity | 10 (maximum) |
+| VBR | Enabled |
+| DTX | Disabled |
 
 Opus is optimised for voice at low bitrates and handles lossy mobile connections well. The configuration is fixed and does not require adjustment.
 
@@ -41,7 +44,7 @@ The default of 100 % passes the raw microphone signal. Increase if your voice is
 
 **Settings > Audio > RX Volume** — adjustable from **0 % to 200 %**.
 
-Controls the playback level of received audio independently of the Android system volume. 100 % is unity gain.
+Controls the playback level of received audio independently of the Android system volume. The default is **70 %** (0.7); 100 % is unity gain.
 
 ---
 
@@ -76,5 +79,6 @@ Three microphone sources are available under **Settings > Audio > Input**:
 | Stage | Detail |
 |---|---|
 | Resampler | Polyphase FIR resampler converts between device sample rate and the 16 kHz codec rate |
-| Jitter buffer | Adaptive buffer absorbs network timing variations; includes packet loss concealment (PLC) to mask lost packets |
-| Limiter | −1 dB ceiling, 10:1 ratio applied to the TX path before encoding |
+| Jitter buffer | Capacity **24 frames**, pre-buffer **3 frames**; absorbs network timing variations |
+| PLC | Proactive packet loss concealment — generates concealment frames on detection of sequence gaps |
+| Limiter | −1 dB ceiling, 10:1 ratio, release time **50 ms**; applied to the TX path before encoding |

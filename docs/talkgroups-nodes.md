@@ -27,6 +27,8 @@ The **Stations** tab lists every node currently linked to your talkgroup on the 
 
 The list updates in real time as nodes connect and disconnect. An empty list means you are the only station connected to that talkgroup.
 
+Idle nodes (connected but not recently active) are grouped into a collapsible **Idle** section at the bottom of the list.
+
 ---
 
 ## Active Talker

@@ -7,7 +7,7 @@
 3. Fill in the following fields:
    - **Name** — a label for this profile (e.g. `My Club Repeater`)
    - **Hostname** — the reflector address, for example `vps.ngen.org`
-   - **Port** — the TCP port provided by your admin (commonly `5300`)
+   - **Port** — the TCP port provided by your admin (default: `5300`)
    - **Talkgroup** — the talkgroup number you want to join, for example `999`
    - **Callsign** — your callsign as it will appear to other stations
    - **Auth Key** — the HMAC-SHA1 authentication key provided by your reflector admin
@@ -24,7 +24,7 @@
 ## Making Your First Transmission
 
 1. Tap the **PTT** tab to open the transmit screen.
-2. VoxLink defaults to **Hold** mode — press and hold the large **PTT** button to transmit, release to stop.
+2. VoxLink defaults to **Latch** mode — tap the large **PTT** button to start transmitting, tap again to stop.
 3. While transmitting, the **TX** level meter shows your microphone signal in dBFS. Aim to keep peaks around −10 dB to −6 dB.
 4. When another station transmits, the **RX** meter becomes active and the active talker's callsign (e.g. `CT2GNH-M`), name, and location are displayed above the meter.
 

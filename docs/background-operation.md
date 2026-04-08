@@ -16,10 +16,14 @@ Tapping the notification returns you to VoxLink.
 
 VoxLink holds two system locks while connected:
 
-- **Wake lock** — prevents the CPU from sleeping, ensuring packets are processed even when the screen is off.
+- **Wake lock** — prevents the CPU from sleeping, ensuring packets are processed even when the screen is off. The lock has a 10-minute timeout and is renewed every 15 seconds by an internal watchdog timer.
 - **Wi-Fi lock** — keeps the Wi-Fi radio active so the connection is not dropped by Android's Wi-Fi power saving.
 
 These locks are released automatically when you disconnect.
+
+### Keep Screen On
+
+Enable **Settings > Connection > Keep Screen On** to prevent the display from turning off while connected. Useful when monitoring a talkgroup hands-free. Default: off.
 
 ---
 
@@ -38,9 +42,13 @@ On some devices you can reach this setting directly from VoxLink: **Settings > B
 
 ## Auto-Reconnect
 
-If the connection drops (network change, server restart, timeout), VoxLink attempts to reconnect automatically using an exponential back-off strategy. The status notification updates to show **Reconnecting…** during this period.
+If the connection drops (network change, server restart, timeout), VoxLink attempts to reconnect automatically with a fixed 2-second delay between attempts. The status notification updates to show **Reconnecting…** during this period.
 
-Auto-reconnect can be disabled in **Settings > Connectivity > Auto-Reconnect** if you prefer to reconnect manually.
+Auto-reconnect can be disabled in **Settings > Connection > Auto-Reconnect** if you prefer to reconnect manually.
+
+### Auto-Connect on Launch
+
+Enable **Settings > Connection > Auto-Connect** to automatically reconnect to the last server when the app starts. Default: off.
 
 ---
 
@@ -54,3 +62,5 @@ VoxLink and the reflector exchange heartbeat packets to detect stale connections
 | Server → Client | — | 15 s |
 
 If no heartbeat is received from the server within 15 seconds, VoxLink considers the connection lost and triggers auto-reconnect.
+
+TCP `SO_KEEPALIVE` is also enabled on the socket, providing an additional layer of dead-connection detection at the OS level.
