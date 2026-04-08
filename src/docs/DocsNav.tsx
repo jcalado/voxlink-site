@@ -15,7 +15,7 @@ export function DocsNav({ sidebarOpen, onToggleSidebar }: { sidebarOpen: boolean
         </Link>
         <span className="text-on-surface-muted text-sm">/ Docs</span>
       </div>
-      <Link to="/" className="text-on-surface-muted text-sm hover:text-white transition-colors">← Back to site</Link>
+      <Link to="/" className="text-on-surface-muted text-sm hover:text-white transition-colors font-medium">← Back to site</Link>
     </nav>
   );
 }

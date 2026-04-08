@@ -1,4 +1,4 @@
-const LOGO_URL = "https://lh3.googleusercontent.com/aida/ADBb0ugJLbKj5ZRS0MOFKG68Bw2kbCmsH5T3-vhwohu7pL7uvWIOlHRknjufa2aLfK36N253mn7Nvi4Cnf2gdXnaCow0na8x78qyV0gc3-XQtpo-SNZ-01IlqMeoOA5ZWpWpsP1Aj9ilyHSE9sbayEC2Mk6g63tqGGYeiULfBLLLOi3RLAIU9PJtKeP4i9CQeEg04s9fYXb-Go9GHPkKqZoDH6uGLqX4X-SXzVdR3kLD8mwtt3la4bwUYhNkg-s1p25Xo7e8mx-Y7L03Gw";
+const LOGO_URL = "/logo.png";
 
 const logoSizes = {
   sm: { container: "h-8 w-8 rounded-lg", img: "h-10 w-10" },
@@ -10,7 +10,7 @@ export function Logo({ size = "md", className = "" }: { size?: keyof typeof logo
   const s = logoSizes[size];
   return (
     <div className={`${s.container} bg-surface-raised overflow-hidden flex items-center justify-center ${className}`}>
-      <img alt="VoxLink Logo" className={`${s.img} object-cover`} src={LOGO_URL} referrerPolicy="no-referrer" />
+      <img alt="VoxLink Logo" className={`${s.img} object-cover`} src={LOGO_URL} />
     </div>
   );
 }

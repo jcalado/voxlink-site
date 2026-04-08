@@ -3,7 +3,7 @@ import { docsConfig } from "./config";
 
 export function DocsSidebar({ activeSlug, open, onClose }: { activeSlug: string; open: boolean; onClose: () => void }) {
   const sidebar = (
-    <div className="w-60 h-full bg-surface border-r border-border p-4 overflow-y-auto">
+    <div className="w-60 h-full bg-surface-raised/50 border-r border-border p-4 overflow-y-auto">
       {docsConfig.map((group) => (
         <div key={group.label} className="mb-6">
           <div className="text-xs font-bold uppercase tracking-widest text-vibrant-orange mb-2 px-2">{group.label}</div>
