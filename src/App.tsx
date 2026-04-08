@@ -37,15 +37,9 @@ export default function App() {
           </div>
           
           <div className="hidden lg:flex gap-12 items-center">
-            {["Reflectors", "Talkgroups", "Nodes", "Setup Guide"].map((item) => (
-              <a 
-                key={item}
-                className="font-medium text-on-surface-muted hover:text-vibrant-blue transition-colors px-2 py-1" 
-                href="#"
-              >
-                {item}
-              </a>
-            ))}
+            <a className="font-medium text-on-surface-muted hover:text-vibrant-blue transition-colors px-2 py-1" href="#screenshots">Screenshots</a>
+            <a className="font-medium text-on-surface-muted hover:text-vibrant-blue transition-colors px-2 py-1" href="#features">Features</a>
+            <a className="font-medium text-on-surface-muted hover:text-vibrant-blue transition-colors px-2 py-1" href="/docs">Docs</a>
           </div>
           
           <button className="bg-vibrant-blue text-white px-6 lg:px-8 py-2.5 lg:py-3 rounded-full font-bold hover:scale-105 transition-all">
@@ -55,7 +49,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <header className="relative overflow-hidden py-16 lg:py-32 px-6 lg:px-8">
+      <header id="screenshots" className="relative overflow-hidden py-16 lg:py-32 px-6 lg:px-8 scroll-mt-24">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-40">
           <div className="absolute top-0 right-10 w-96 h-96 bg-sky-900 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-10 w-[500px] h-[500px] bg-slate-900 rounded-full blur-3xl"></div>
@@ -114,7 +108,7 @@ export default function App() {
       </header>
 
       {/* Features Section */}
-      <section className="py-24 lg:py-32 px-6 lg:px-8 bg-surface border-y border-border">
+      <section id="features" className="py-24 lg:py-32 px-6 lg:px-8 bg-surface border-y border-border scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 lg:mb-24 max-w-2xl">
             <h2 className="text-4xl lg:text-6xl font-headline font-bold text-white mb-6 tracking-tight">Built for Radio</h2>
