@@ -157,10 +157,6 @@ export default function App() {
             Download VoxLink and connect to reflectors worldwide. Available on Android — free, no registration required.
           </p>
 
-          <p className="text-on-surface-muted text-sm font-mono mb-12">
-            <span className="text-vibrant-orange font-bold">14,200</span> operators · <span className="text-vibrant-blue font-bold">99.9%</span> uptime · <span className="text-accent-tertiary font-bold">&lt;20ms</span> latency
-          </p>
-
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <button className="w-full sm:w-auto bg-vibrant-orange hover:bg-orange-500 text-white font-bold text-lg px-8 lg:px-10 py-4 lg:py-5 rounded-2xl flex items-center justify-center gap-3 transition-all hover:-translate-y-1">
               Get the App
