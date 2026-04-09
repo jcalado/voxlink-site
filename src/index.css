@@ -3,6 +3,26 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: #334155 #0F172A;
+  scrollbar-width: thin;
+}
+
+/* Webkit scrollbar for Chrome/Safari/Edge */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
 }
 
 @theme {

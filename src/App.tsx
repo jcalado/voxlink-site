@@ -5,7 +5,10 @@ import {
   Download,
   BookOpen,
   Radio,
-  Wifi
+  Wifi,
+  MessageCircle,
+  Layers,
+  Disc
 } from "lucide-react";
 import { Logo } from "./Logo";
 
@@ -56,7 +59,7 @@ export default function App() {
             </h1>
 
             <p className="text-lg lg:text-2xl text-on-surface-muted max-w-xl mb-12 leading-relaxed mx-auto lg:mx-0">
-              Connect to radio reflectors worldwide from your phone. VoxLink gives you PTT access to thousands of channels — no extra hardware needed.
+              Connect to SvxLink reflectors worldwide from your phone. VoxLink gives you push-to-talk access to any talkgroup — no extra hardware needed.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
@@ -64,9 +67,10 @@ export default function App() {
                 Get the App
                 <Download className="w-5 h-5" />
               </button>
-              <button className="bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-lg px-8 lg:px-10 py-4 lg:py-5 rounded-2xl flex items-center justify-center gap-3 border border-border transition-all hover:-translate-y-1">
-                View Reflectors
-              </button>
+              <a href="#" className="bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-lg px-8 lg:px-10 py-4 lg:py-5 rounded-2xl flex items-center justify-center gap-3 border border-border transition-all hover:-translate-y-1">
+                <MessageCircle className="w-5 h-5" />
+                Join the Community
+              </a>
             </div>
           </motion.div>
 
@@ -107,7 +111,7 @@ export default function App() {
             >
               <Mic className="w-10 h-10 text-vibrant-orange mb-8" />
               <h3 className="font-headline font-bold text-3xl lg:text-4xl mb-5 text-white">3 PTT Modes</h3>
-              <p className="text-on-surface-muted text-lg leading-relaxed max-w-lg">Latch, Hold, or VOX — transmit however feels natural. Configurable timeout timer with vibration warning so you never overstay your turn.</p>
+              <p className="text-on-surface-muted text-lg leading-relaxed max-w-lg">Latch, Hold, or VOX — transmit however feels natural. VOX includes a visual threshold slider so you can dial in sensitivity on the fly. Configurable timeout timer with vibration warning so you never overstay your turn.</p>
             </motion.div>
 
             {/* Opus Audio */}
@@ -117,7 +121,7 @@ export default function App() {
             >
               <Activity className="w-8 h-8 text-vibrant-blue mb-6" />
               <h3 className="font-headline font-bold text-2xl mb-3 text-white">Opus Wideband Audio</h3>
-              <p className="text-on-surface-muted leading-relaxed">16 kHz Opus codec with adaptive jitter buffer and packet loss concealment. RX/TX level metering in dB, adjustable mic gain, and 3 output routes.</p>
+              <p className="text-on-surface-muted leading-relaxed">Crystal-clear 16 kHz Opus codec that handles network hiccups gracefully. Live RX/TX level meters, adjustable mic gain, multiple input sources, and output to speaker, earpiece, or Bluetooth.</p>
             </motion.div>
 
             {/* Multi-Server */}
@@ -127,7 +131,7 @@ export default function App() {
             >
               <Radio className="w-8 h-8 text-accent-tertiary mb-6" />
               <h3 className="font-headline font-bold text-2xl mb-3 text-white">Multi-Server Profiles</h3>
-              <p className="text-on-surface-muted leading-relaxed">Save multiple reflector configs and switch between them instantly. JSON import/export to share setups with your club.</p>
+              <p className="text-on-surface-muted leading-relaxed">Save multiple reflector setups with talkgroup presets for each server. Label your favorites, reorder them, and switch instantly. Import and export configs as JSON to share with your club.</p>
             </motion.div>
 
             {/* Always On */}
@@ -137,7 +141,27 @@ export default function App() {
             >
               <Wifi className="w-10 h-10 text-vibrant-orange mb-8" />
               <h3 className="font-headline font-bold text-3xl lg:text-4xl mb-5 text-white">Always On</h3>
-              <p className="text-on-surface-muted text-lg leading-relaxed max-w-lg">Runs as a foreground service with wake and WiFi locks — no dropped connections when your screen is off. Auto-reconnects on network changes with heartbeat monitoring.</p>
+              <p className="text-on-surface-muted text-lg leading-relaxed max-w-lg">Stays connected in the background — no dropped connections when your screen is off or you switch apps. Automatically reconnects when your network changes between WiFi and cellular.</p>
+            </motion.div>
+
+            {/* TG Monitoring */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="lg:col-span-3 p-10 lg:p-14 rounded-3xl bg-surface-raised/40 border border-border hover:bg-surface-raised/60 transition-all"
+            >
+              <Layers className="w-10 h-10 text-vibrant-blue mb-8" />
+              <h3 className="font-headline font-bold text-3xl lg:text-4xl mb-5 text-white">Talkgroup Monitoring</h3>
+              <p className="text-on-surface-muted text-lg leading-relaxed max-w-lg">Listen to multiple talkgroups at once while staying on your primary. Pick which groups to monitor, and see their activity live on your PTT screen.</p>
+            </motion.div>
+
+            {/* Recording */}
+            <motion.div
+              whileHover={{ y: -6 }}
+              className="lg:col-span-2 p-10 rounded-3xl bg-surface-raised/40 border border-border hover:bg-surface-raised/60 transition-all"
+            >
+              <Disc className="w-8 h-8 text-vibrant-orange mb-6" />
+              <h3 className="font-headline font-bold text-2xl mb-3 text-white">Recording</h3>
+              <p className="text-on-surface-muted leading-relaxed">Record your QSOs with one tap. Browse, play back, and share saved recordings from a built-in library.</p>
             </motion.div>
           </div>
         </div>
@@ -154,7 +178,7 @@ export default function App() {
           <Logo size="lg" className="mx-auto mb-12" />
           <h2 className="text-4xl lg:text-7xl font-headline font-bold mb-8 text-white tracking-tight">Get on the Air</h2>
           <p className="text-on-surface-muted text-lg lg:text-xl mb-6 leading-relaxed max-w-2xl mx-auto">
-            Download VoxLink and connect to reflectors worldwide. Available on Android — free, no registration required.
+            Free on Android, no account needed. Install VoxLink, add your reflector, and you're on the air.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
@@ -192,7 +216,7 @@ export default function App() {
           </div>
           
           <div className="text-on-surface-muted text-sm font-medium text-center md:text-right">
-            © 2025 VoxLink. Let's talk!
+            © 2026 VoxLink. Let's talk!
           </div>
         </div>
       </footer>
