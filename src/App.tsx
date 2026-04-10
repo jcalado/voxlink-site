@@ -281,7 +281,7 @@ export default function App() {
             {[
               { label: "About Us", href: "#" },
               { label: "Docs", href: "/docs" },
-              { label: "Privacy", href: "#" },
+              { label: "Privacy", href: "/privacy" },
               { label: "Twitter", href: "#" },
             ].map((link) => (
               <a key={link.label} className="text-sm font-semibold text-on-surface-muted hover:text-vibrant-red transition-colors" href={link.href}>
