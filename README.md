@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# VoxLink Site
 
-# Run and deploy your AI Studio app
+Landing page and documentation site for [VoxLink](https://voxlink.app) — a modern PTT (Push-to-Talk) client for SvxLink radio reflectors.
 
-This contains everything you need to run your app locally.
+## Tech Stack
 
-View your app in AI Studio: https://ai.studio/apps/d6a0ae37-2caa-4aa0-9651-51fd22985468
+- React 19 + Vite
+- Tailwind CSS v4
+- Framer Motion (`motion/react`)
+- React Router
 
-## Run Locally
+## Development
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
+```bash
+npm install
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The dev server starts at `http://localhost:3000`.
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run lint` | Type-check (`tsc --noEmit`) |
+| `npm run clean` | Remove `dist/` |
+
+## License
+
+MIT
