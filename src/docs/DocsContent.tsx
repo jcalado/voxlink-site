@@ -1,7 +1,20 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
 import { getAdjacentPages, getPageBySlug } from "./config";
+import { useLanguage } from "../i18n/LanguageContext";
 import "./docs.css";
+
+const pageTitleKeys: Record<string, string> = {
+  "installation": "docs.page.installation",
+  "first-connection": "docs.page.firstConnection",
+  "ptt-modes": "docs.page.pttModes",
+  "audio-settings": "docs.page.audioSettings",
+  "server-profiles": "docs.page.serverProfiles",
+  "talkgroups-nodes": "docs.page.talkgroupsNodes",
+  "recording": "docs.page.recording",
+  "background-operation": "docs.page.backgroundOperation",
+  "troubleshooting": "docs.page.troubleshooting",
+};
 
 function startViewTransition(callback: () => void) {
   if (document.startViewTransition) {
@@ -26,6 +39,7 @@ function ImageModal({ src, alt, onClose }: { src: string; alt: string; onClose: 
 }
 
 export function DocsContent({ slug, html }: { slug: string; html: string }) {
+  const { t } = useLanguage();
   const page = getPageBySlug(slug);
   const { prev, next } = getAdjacentPages(slug);
   const [modalImg, setModalImg] = useState<{ src: string; alt: string } | null>(null);
@@ -63,9 +77,9 @@ export function DocsContent({ slug, html }: { slug: string; html: string }) {
     return (
       <div className="flex-1 p-6 lg:p-10">
         <div className="max-w-[680px]">
-          <h1 className="text-2xl font-headline font-bold text-white mb-4">Page not found</h1>
-          <p className="text-on-surface-muted mb-6">The doc page "{slug}" doesn't exist.</p>
-          <Link to="/docs/installation" className="text-vibrant-blue hover:underline">Go to Installation →</Link>
+          <h1 className="text-2xl font-headline font-bold text-white mb-4">{t("docs.pageNotFound")}</h1>
+          <p className="text-on-surface-muted mb-6">{t("docs.pageNotFoundText").replace("{slug}", slug)}</p>
+          <Link to="/docs/installation" className="text-vibrant-blue hover:underline">{t("docs.goToInstallation")}</Link>
         </div>
       </div>
     );
@@ -79,14 +93,14 @@ export function DocsContent({ slug, html }: { slug: string; html: string }) {
           <div className="flex justify-between items-start mt-12 pt-6 border-t border-border">
             {prev ? (
               <Link to={`/docs/${prev.slug}`} className="group">
-                <div className="text-[10px] uppercase tracking-widest text-on-surface-muted mb-1">Previous</div>
-                <div className="text-vibrant-blue font-semibold text-sm group-hover:underline">← {prev.title}</div>
+                <div className="text-[10px] uppercase tracking-widest text-on-surface-muted mb-1">{t("docs.previous")}</div>
+                <div className="text-vibrant-blue font-semibold text-sm group-hover:underline">← {t(pageTitleKeys[prev.slug] ?? prev.title)}</div>
               </Link>
             ) : <div />}
             {next ? (
               <Link to={`/docs/${next.slug}`} className="group text-right">
-                <div className="text-[10px] uppercase tracking-widest text-on-surface-muted mb-1">Next</div>
-                <div className="text-vibrant-blue font-semibold text-sm group-hover:underline">{next.title} →</div>
+                <div className="text-[10px] uppercase tracking-widest text-on-surface-muted mb-1">{t("docs.next")}</div>
+                <div className="text-vibrant-blue font-semibold text-sm group-hover:underline">{t(pageTitleKeys[next.slug] ?? next.title)} →</div>
               </Link>
             ) : <div />}
           </div>

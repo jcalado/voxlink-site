@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Logo } from "../Logo";
+import { useLanguage } from "../i18n/LanguageContext";
+import { LanguageSwitcher } from "../i18n/LanguageSwitcher";
 
 export function DocsNav({ sidebarOpen, onToggleSidebar }: { sidebarOpen: boolean; onToggleSidebar: () => void }) {
+  const { t } = useLanguage();
+
   return (
     <nav className="h-14 bg-surface border-b border-border flex items-center justify-between px-4 lg:px-6 sticky top-0 z-50">
       <div className="flex items-center gap-3">
@@ -13,9 +17,12 @@ export function DocsNav({ sidebarOpen, onToggleSidebar }: { sidebarOpen: boolean
           <Logo size="sm" />
           <span className="font-headline font-bold text-white text-sm">VoxLink</span>
         </Link>
-        <span className="text-on-surface-muted text-sm">/ Docs</span>
+        <span className="text-on-surface-muted text-sm">{t("docs.slash")}</span>
       </div>
-      <Link to="/" className="text-on-surface-muted text-sm hover:text-white transition-colors font-medium">← Back to site</Link>
+      <div className="flex items-center gap-3">
+        <LanguageSwitcher />
+        <Link to="/" className="text-on-surface-muted text-sm hover:text-white transition-colors font-medium">{t("docs.backToSite")}</Link>
+      </div>
     </nav>
   );
 }
