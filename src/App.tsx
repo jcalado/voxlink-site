@@ -44,7 +44,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <header id="screenshots" className="relative overflow-hidden py-16 lg:py-32 px-6 lg:px-8 scroll-mt-24">
+      <header className="relative overflow-hidden py-16 lg:py-32 px-6 lg:px-8">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-40">
           <motion.div
             animate={{ x: [0, 30, -20, 0], y: [0, -20, 10, 0], scale: [1, 1.1, 0.95, 1] }}
@@ -135,6 +135,44 @@ export default function App() {
           </motion.div>
         </div>
       </header>
+
+      {/* Screenshots Gallery */}
+      <section id="screenshots" className="py-16 lg:py-24 px-6 lg:px-8 scroll-mt-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory pb-4 lg:pb-0 lg:grid lg:grid-cols-4 lg:overflow-visible scrollbar-hide">
+            {[
+              { src: "/app-screenshot", alt: "VoxLink PTT Screen", label: t("screenshots.ptt") },
+              { src: "/docs/servers-screen", alt: "VoxLink Servers Screen", label: t("screenshots.servers") },
+              { src: "/docs/nodes-screen", alt: "VoxLink Nodes Screen", label: t("screenshots.nodes") },
+              { src: "/docs/settings-screen", alt: "VoxLink Settings Screen", label: t("screenshots.settings") },
+            ].map((item, i) => (
+              <motion.div
+                key={item.src}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="flex flex-col items-center gap-4 snap-center shrink-0 w-56 lg:w-auto"
+              >
+                <div className="bg-surface-raised p-3 rounded-[2.5rem] soft-shadow border border-border">
+                  <picture>
+                    <source srcSet={`${item.src}.webp`} type="image/webp" />
+                    <img
+                      alt={item.alt}
+                      className="w-full rounded-[2rem]"
+                      src={`${item.src}.png`}
+                      width={1080}
+                      height={2424}
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <span className="text-xs font-bold uppercase tracking-widest text-on-surface-muted">{item.label}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Features Section */}
       <section id="features" className="py-24 lg:py-32 px-6 lg:px-8 bg-surface border-y border-border scroll-mt-24">

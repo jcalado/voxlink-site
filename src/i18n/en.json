@@ -10,6 +10,11 @@
   "hero.subtitle": "Connect to SvxLink reflectors worldwide from your phone. VoxLink gives you push-to-talk access to any talkgroup — no extra hardware needed.",
   "hero.joinCommunity": "Join the Community",
 
+  "screenshots.ptt": "PTT",
+  "screenshots.servers": "Servers",
+  "screenshots.nodes": "Nodes",
+  "screenshots.settings": "Settings",
+
   "features.heading": "Built for Radio",
   "features.subheading": "Everything you need to stay on the air, right from your pocket.",
   "features.ptt.title": "3 PTT Modes",
