@@ -1,5 +1,51 @@
 # Registo de Alterações
 
+## 1.3.0
+
+### Novidades
+
+- **Suporte APRS-IS** — o VoxLink é agora um cliente APRS. Ligue-se com o seu indicativo e passcode e tem:
+    - Mapa em tempo real (OpenStreetMap) com marcadores das estações, etiquetas de indicativo e ícones Material para símbolos APRS comuns
+    - Lista de estações ordenável por distância e último contacto, com folha de detalhe que mostra path, status, rumo/velocidade/altitude
+    - **Mensagens APRS** — envio e receção de mensagens
+    - Beaconing com dois **modos de posicionamento**: automático via GPS (com precisão configurável) ou seletor manual no mapa para localizações fixas, cada um com as suas definições
+    - Operação em segundo plano através do serviço de primeiro plano, para que os beacons continuem a sair e o tráfego a chegar
+    - Descodificação de posições comprimidas, Mic-E, rumo/velocidade/altitude, objetos e itens
+    - Interruptor mestre para desligar a funcionalidade por completo; localizado em EN/PT
+- Secção **Acessibilidade** com:
+    - **Modo exterior** — botão PTT maior, com um anel exterior visível ao relance
+    - **Indicador de quem fala em tamanho grande** — indicativo a 56px, subtítulo a 22px
+    - **Flash verde** do ecrã ao início de RX
+    - **Reduzir movimento** — desliga o indicador de ligação pulsante e outras animações ambiente
+    - **Intensidade da vibração** — Desligada / Subtil / Forte, escala todas as durações
+    - Vibração no **início e fim de TX**
+    - Cores de alto contraste no botão PTT e no indicador de quem fala
+- **Atividade dos monitores** — banner no ecrã PTT quando um TG monitorizado fica ativo (toque para mudar para ele), mais notificações do sistema para atividade dos monitores e quedas de ligação, com interruptores na nova secção Notificações. Janela de coalescência de 5s mantém o banner estável durante rajadas curtas.
+- **Opus a 48 kHz** — encoder e decoder atualizados para melhor qualidade de áudio
+- **Encaminhamento de áudio Bluetooth** trata corretamente o ciclo de vida da sessão de comunicação, resolvendo problemas antigos com auriculares BT
+- **Definições reorganizadas** em sub-ecrãs focados (Transmissão, Áudio, PTT externo, Notificações, Ecrã PTT, Acessibilidade, Ligação, APRS), com cartões agrupados e navegação consistente por chevron
+- **Manter ecrã ligado** (ligado a wakelock)
+- **Exportação/importação de servidores** pelo menu de partilha, com aviso visível sobre segredos
+- **Scan** de talkgroups
+- O ecrã **Nós** separa a lista por atividade no talkgroup selecionado
+- Reprodução evoluiu: reprodução baseada em playlist com tira na UI, pausa/retoma que preserva a posição absoluta, e o PTT manual interrompe a reprodução de forma limpa
+
+### Alterado
+
+- O primeiro servidor é ativado automaticamente ao adicionar e ao carregar, garantindo que o seletor PTT mostra sempre presets
+- Cartão de servidor ativo e dashboard de servidores polidos
+- "Auth Key" renomeado para "Password" no formulário de servidor
+- Ecrã de nós: pílulas de tempo relativo localizadas (EN + PT); traduções em português melhoradas ("estações", "Ativas", "atividade")
+
+### Corrigido
+
+- Gravações: desfazer no swipe-to-delete passa a restaurar o ficheiro
+- Fuga do microfone em VOX, teardown em erro do decoder e corridas no start/stop
+- Underruns do AudioTrack ao drenar o jitter buffer
+- Seletor PTT respeita os defaults de monitor por preset
+- Pausa/retoma preserva a posição da reprodução (reportava posição relativa)
+- Várias correcções menores de estabilidade e tradução
+
 ## 1.2.0
 
 ### Novidades

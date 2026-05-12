@@ -11,6 +11,7 @@ import {
   Layers,
   Disc
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
 import { useLanguage } from "./i18n/LanguageContext";
 import { LanguageSwitcher } from "./i18n/LanguageSwitcher";
@@ -311,6 +312,13 @@ export default function App() {
               <BookOpen className="w-5 h-5" />
             </a>
           </div>
+
+          <div className="mt-8">
+            <Link to="/hamtetra-ct" className="inline-flex items-center gap-2 text-vibrant-blue hover:text-sky-300 font-semibold transition-colors">
+              <Radio className="w-4 h-4" />
+              {t("cta.hamtetra")}
+            </Link>
+          </div>
         </motion.div>
       </section>
 
@@ -326,6 +334,7 @@ export default function App() {
             {[
               { label: t("footer.aboutUs"), href: "#" },
               { label: t("footer.docs"), href: "/docs" },
+              { label: t("footer.hamtetra"), href: "/hamtetra-ct" },
               { label: t("footer.privacy"), href: "/privacy" },
             ].map((link) => (
               <a key={link.href} className="text-sm font-semibold text-on-surface-muted hover:text-vibrant-red transition-colors" href={link.href}>

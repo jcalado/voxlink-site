@@ -1,5 +1,51 @@
 # Changelog
 
+## 1.3.0
+
+### New
+
+- **APRS-IS support** — VoxLink is now an APRS client. Connect with your callsign and passcode and get:
+    - Live map (OpenStreetMap) with station markers, callsign labels, and Material icons for common APRS symbols
+    - Stations list sortable by distance and last-heard, with a station detail sheet showing path, status, course/speed/altitude
+    - **APRS messaging** — send and receive APRS messages
+    - Beaconing with two **positioning modes**: automatic from GPS (with tunable accuracy) or a manual map picker for fixed locations, each with its own settings
+    - Background operation via the foreground service so beacons keep going out and incoming traffic keeps flowing
+    - Parsing for compressed positions, Mic-E, course/speed/altitude, objects, and items
+    - Master toggle to gate the whole feature; localized in EN/PT
+- **Accessibility** section with:
+    - **Outdoors mode** — larger PTT button with a glanceable outer ring
+    - **Huge talker display** — 56px callsign, 22px subtitle
+    - **Green screen flash** on RX talker start
+    - **Reduce motion** — disables pulsing connection indicator and other ambient animation
+    - **Haptic strength** — Off / Subtle / Strong, scales all vibration durations
+    - **TX start/stop vibration** cues
+    - High-contrast PTT and talker state colors
+- **Monitor activity** — banner on the PTT screen when a monitored TG goes active (tap to switch), plus OS notifications for talker activity and connection drops, with toggles in Notifications settings. 5s idle-coalesce window keeps the banner stable through bursts of short transmissions.
+- **48 kHz Opus** — encoder and decoder upgraded for improved audio quality
+- **Bluetooth audio routing** properly handles the comm-device session lifecycle, resolving long-standing routing issues with BT headsets
+- **Settings reorganized** into focused sub-screens (Transmission, Audio, External PTT, Notifications, PTT screen, Accessibility, Connection, APRS) with grouped cards and consistent chevron navigation
+- **Keep screen on** toggle (wired to wakelock)
+- **Server export/import** via the share sheet, with a visible warning about secrets
+- **Scan** across talkgroups
+- **Nodes** screen splits the list by activity on the selected talkgroup
+- Playback grew: playlist-based playback with a strip UI, pause/resume that preserves absolute file offset, manual-PTT interrupt cleanly stops the file
+
+### Changed
+
+- First server is auto-activated on add and on load, so the PTT picker always has presets to show
+- Polished active-server hero card and servers dashboard
+- "Auth Key" renamed to "Password" in the server form
+- Nodes screen: localized relative-time pills (EN + PT); improved Portuguese translations ("estações", "Ativas", "atividade")
+
+### Fixed
+
+- Recordings: swipe-to-delete Undo now actually restores the file
+- VOX mic leak, decoder-error teardown, and start/stop races
+- AudioTrack underruns from the jitter buffer on drain
+- PTT picker reflects preset monitor defaults
+- Pause/resume preserves playback offset (was reporting relative position)
+- Various smaller stability and translation fixes
+
 ## 1.2.0
 
 ### New
