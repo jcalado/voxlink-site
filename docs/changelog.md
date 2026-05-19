@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.3.1
+
+### New
+
+- **TX / time-out timer row** on the PTT screen (optional) — glanceable countdown while transmitting
+- **Quit** item in the PTT-screen connection menu (optional) — close the app without diving into settings
+- **Bluetooth audio mode** picker — choose between voice-call and media routing for your BT headset
+- APRS tocall switched to the officially-assigned **APVOXL**
+
+### Fixed
+
+- More reliable background operation — APRS, audio, and location keep working when the app isn't in the foreground
+- Cleaner audio at the end of transmissions, and fewer dropouts after long idle periods
+- Monitor and scan settings now persist across restarts, and you no longer hear traffic from a talkgroup you've switched away from
+- Smarter APRS beaconing when GPS speed readings are unreliable
+- Various smaller stability fixes
+
 ## 1.3.0
 
 ### New

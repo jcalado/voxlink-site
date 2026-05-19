@@ -1,5 +1,22 @@
 # Registo de Alterações
 
+## 1.3.1
+
+### Novidades
+
+- **Linha do temporizador TX / TOT** no ecrã PTT (opcional) — contagem decrescente visível durante a transmissão
+- Item **Sair** no menu de ligação do ecrã PTT (opcional) — fecha a app sem ter de entrar nas definições
+- Seletor de **modo de áudio Bluetooth** — escolha entre encaminhamento de chamada de voz ou multimédia para os auriculares BT
+- Tocall APRS atualizado para o oficialmente atribuído **APVOXL**
+
+### Correções
+
+- Funcionamento em segundo plano mais fiável — APRS, áudio e localização continuam a funcionar quando a app não está em primeiro plano
+- Áudio mais limpo no fim das transmissões e menos cortes após longos períodos de inatividade
+- As definições de monitorização e scan persistem entre arranques, e já não ouve tráfego de um talkgroup do qual mudou
+- Beaconing APRS mais inteligente quando a velocidade do GPS não é fiável
+- Várias pequenas correções de estabilidade
+
 ## 1.3.0
 
 ### Novidades

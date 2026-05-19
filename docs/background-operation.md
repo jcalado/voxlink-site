@@ -33,6 +33,15 @@ Enable **Settings > Connection > Auto-Connect** to reconnect to your last server
 
 Enable **Settings > Connection > Keep Screen On** to prevent the display from turning off while connected. Useful for hands-free monitoring. Off by default.
 
+## Quitting the App
+
+Because the persistent notification keeps VoxLink running, swiping the app away or pressing back doesn't actually close it. Two settings change that:
+
+- **Settings > Connection > Quit on exit** — pressing back from the main screen fully closes the app instead of leaving it running in the background.
+- **Settings > PTT screen controls > Show quit option** — turns the connection indicator at the top of the PTT screen into a menu with Connect / Disconnect and a **Quit** item that disconnects and exits the app in one tap.
+
+The PTT-screen Quit menu is handy when you're in the middle of operating and want to fully shut down without navigating to Android's recents.
+
 ## Connection Health
 
 VoxLink sends a heartbeat to the server every 5 seconds. If no response arrives within 15 seconds, the connection is considered lost and auto-reconnect kicks in.

@@ -15,6 +15,7 @@ const pageTitleKeys: Record<string, string> = {
   "audio-settings": "docs.page.audioSettings",
   "server-profiles": "docs.page.serverProfiles",
   "talkgroups-nodes": "docs.page.talkgroupsNodes",
+  "aprs": "docs.page.aprs",
   "recording": "docs.page.recording",
   "background-operation": "docs.page.backgroundOperation",
   "troubleshooting": "docs.page.troubleshooting",
