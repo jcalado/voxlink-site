@@ -1,7 +1,8 @@
 .prose { color: #B0BEC5; font-size: 1rem; line-height: 1.8; }
 .prose h1 { color: white; font-family: "Poppins", sans-serif; font-size: 2.25rem; font-weight: 700; margin: 0 0 0.5rem 0; }
-.prose h2 { color: white; font-size: 1.35rem; font-weight: 700; margin: 3rem 0 0.75rem 0; padding-top: 0.5rem; }
-.prose h3 { color: white; font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.5rem 0; }
+.prose h2 { color: white; font-size: 1.35rem; font-weight: 700; margin: 3rem 0 0.75rem 0; padding-top: 0.5rem; scroll-margin-top: 5rem; }
+.prose h3 { color: white; font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.5rem 0; scroll-margin-top: 5rem; }
+html { scroll-behavior: smooth; }
 .prose p { margin: 0 0 1rem 0; }
 .prose a { color: #38BDF8; text-decoration: none; }
 .prose a:hover { text-decoration: underline; }
@@ -34,6 +35,25 @@
   animation-duration: 0.25s;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Tocbot table-of-contents */
+.toc-list { list-style: none; margin: 0; padding: 0; border-left: 1px solid rgba(255, 255, 255, 0.07); }
+.toc-list .toc-list { padding-left: 0; }
+.toc-list-item { margin: 0; }
+.toc-link {
+  display: block;
+  padding: 0.25rem 0 0.25rem 0.75rem;
+  margin-left: -1px;
+  border-left: 2px solid transparent;
+  font-size: 0.875rem;
+  color: #94A3B8;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.15s, border-color 0.15s;
+}
+.toc-link:hover { color: white; }
+.toc-link.node-name--H3 { padding-left: 1.5rem; font-size: 0.8125rem; }
+.toc-link.is-active-link { color: white; font-weight: 500; border-left-color: #38BDF8; }
 
 /* Sidebar scrollbar */
 .docs-sidebar::-webkit-scrollbar { width: 4px; }

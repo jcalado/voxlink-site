@@ -123,5 +123,6 @@
   "docs.page.recording": "Recording",
   "docs.page.backgroundOperation": "Background Operation",
   "docs.page.troubleshooting": "Troubleshooting",
-  "docs.page.changelog": "Changelog"
+  "docs.page.changelog": "Changelog",
+  "docs.onThisPage": "On this page"
 }

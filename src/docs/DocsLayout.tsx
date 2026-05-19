@@ -1,9 +1,31 @@
 import { useState, useEffect } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import { marked } from "marked";
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+}
+
+marked.use({
+  renderer: {
+    heading({ tokens, depth }) {
+      const text = this.parser.parseInline(tokens);
+      const raw = tokens.map((t) => ("raw" in t ? t.raw : "")).join("");
+      const id = slugify(raw);
+      return `<h${depth} id="${id}">${text}</h${depth}>\n`;
+    },
+  },
+});
 import { DocsNav } from "./DocsNav";
 import { DocsSidebar } from "./DocsSidebar";
 import { DocsContent } from "./DocsContent";
+import { DocsToc } from "./DocsToc";
 import { getPageBySlug } from "./config";
 import { useLanguage } from "../i18n/LanguageContext";
 
@@ -39,6 +61,7 @@ export function DocsLayout() {
       <div className="flex">
         <DocsSidebar activeSlug={slug} open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
         {page && html ? <DocsContent slug={slug} html={html} /> : <DocsContent slug={slug} html="" />}
+        {page && html && <DocsToc slug={slug} hasContent={!!html} />}
       </div>
     </div>
   );
