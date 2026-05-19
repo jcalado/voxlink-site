@@ -9,7 +9,8 @@ import {
   Wifi,
   MessageCircle,
   Layers,
-  Disc
+  Disc,
+  Coffee,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
@@ -319,6 +320,35 @@ export default function App() {
               {t("cta.hamtetra")}
             </Link>
           </div>
+        </motion.div>
+      </section>
+
+      {/* Support / Ko-fi */}
+      <section className="py-16 lg:py-20 px-6 lg:px-8 bg-community-bg border-t border-border">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-2xl mx-auto text-center"
+        >
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-vibrant-orange/10 text-vibrant-orange mb-6">
+            <Coffee className="w-7 h-7" />
+          </div>
+          <h2 className="text-3xl lg:text-4xl font-headline font-bold mb-4 text-white tracking-tight">
+            {t("support.heading")}
+          </h2>
+          <p className="text-on-surface-muted text-base lg:text-lg mb-8 leading-relaxed">
+            {t("support.description")}
+          </p>
+          <a
+            href="https://ko-fi.com/jcalado"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-press inline-flex items-center gap-3 bg-vibrant-orange hover:bg-orange-400 text-community-bg font-bold text-base lg:text-lg px-7 lg:px-8 py-3.5 lg:py-4 rounded-2xl transition-all hover:-translate-y-1"
+          >
+            <Coffee className="w-5 h-5" />
+            {t("support.cta")}
+          </a>
         </motion.div>
       </section>
 
