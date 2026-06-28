@@ -2,9 +2,10 @@
   "nav.screenshots": "Screenshots",
   "nav.features": "Features",
   "nav.docs": "Docs",
-  "nav.getApp": "Get the App",
+  "nav.getApp": "Play Store",
 
   "hero.badge": "Free to Download",
+  "hero.pocApk": "PoC APK",
   "hero.title1": "Talk to the",
   "hero.title2": "World.",
   "hero.subtitle": "Connect to SvxLink reflectors worldwide from your phone. VoxLink gives you push-to-talk access to any talkgroup — no extra hardware needed.",
