@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.5.0
+
+### New
+
+- **Reworked talkgroup picker** — one merged, searchable list (presets + monitored + scanned). Type a number to switch to it or save it as a talkgroup. Per-row **Save / Remove**, **Monitor**, and **Add to scan** in a tidy menu; search is a toggle; full-screen with D-pad navigation on compact radios.
+- **Talkgroups in the server form** — add, edit, and reorder a server's talkgroups right where you create or edit it; the separate "Talkgroup" field and the old presets screen are gone.
+- **Follow server QSY** — optionally follow server-initiated talkgroup moves, with an on-screen notice and a per-server toggle.
+- **Quit** from the navigation drawer.
+- **Hytera P50** — auto-binds the talkgroup dial.
+- **Hide the on-screen PTT button** — for VOX or external-PTT users.
+- **Linux desktop** support.
+
+### Changed
+
+- Full-screen dialogs and a tighter, edge-aligned layout on compact radios.
+- **Hardware controls** are always on now — the redundant on/off switch was removed; just bind a key.
+
+### Fixed
+
+- Editing a server no longer clears its scanned talkgroups.
+- Hardware-key / D-pad text entry: the delete (Back) key now erases characters and stays in the field until it's empty.
+
 ## 1.3.1
 
 ### New

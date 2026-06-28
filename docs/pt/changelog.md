@@ -1,5 +1,27 @@
 # Registo de Alterações
 
+## 1.5.0
+
+### Novidades
+
+- **Seletor de talkgroups renovado** — uma única lista pesquisável (presets + monitorizados + em scan). Escreva um número para mudar para ele ou guardá-lo como talkgroup. **Guardar / Remover**, **Monitorizar** e **Adicionar à pesquisa** por linha, num menu organizado; a pesquisa é um botão; ecrã inteiro com navegação por D-pad nos rádios compactos.
+- **Talkgroups no formulário de servidor** — adicione, edite e reordene os talkgroups de um servidor onde o cria ou edita; o campo "Talkgroup" separado e o antigo ecrã de presets desapareceram.
+- **Seguir QSY do servidor** — opcionalmente acompanhe as mudanças de talkgroup iniciadas pelo servidor, com aviso no ecrã e interruptor por servidor.
+- **Sair** a partir do menu de navegação.
+- **Hytera P50** — associa automaticamente o seletor (dial) de talkgroup.
+- **Ocultar o botão PTT do ecrã** — para quem usa VOX ou PTT externo.
+- Suporte para **ambiente de trabalho Linux**.
+
+### Alterado
+
+- Caixas de diálogo em ecrã inteiro e disposição mais compacta e alinhada às margens nos rádios compactos.
+- Os **controlos de hardware** estão agora sempre ativos — o interruptor redundante foi removido; basta associar uma tecla.
+
+### Corrigido
+
+- Editar um servidor já não apaga os seus talkgroups em scan.
+- Introdução de texto por tecla de hardware / D-pad: a tecla apagar (Back) passa a apagar caracteres e mantém-se no campo até ele ficar vazio.
+
 ## 1.3.1
 
 ### Novidades
