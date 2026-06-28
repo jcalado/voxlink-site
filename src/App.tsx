@@ -94,17 +94,17 @@ export default function App() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.45 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start"
             >
-              <a href="https://play.google.com/store/apps/details?id=com.jcalado.voxlink" target="_blank" rel="noopener noreferrer" className="btn-press bg-vibrant-red hover:bg-red-500 text-white font-bold text-lg px-8 lg:px-10 py-4 lg:py-5 rounded-2xl flex items-center justify-center gap-3 transition-all hover:-translate-y-1">
+              <a href="https://play.google.com/store/apps/details?id=com.jcalado.voxlink" target="_blank" rel="noopener noreferrer" className="btn-press bg-vibrant-red hover:bg-red-500 text-white font-bold text-base px-6 lg:px-7 py-3.5 lg:py-4 rounded-2xl flex items-center justify-center gap-3 transition-all hover:-translate-y-1">
                 {t("nav.getApp")}
                 <Download className="w-5 h-5" />
               </a>
-              <a href="https://github.com/jcalado/voxlink-site/releases/download/v1.5.0/VoxLink.1.5.0.apk" target="_blank" rel="noopener noreferrer" className="btn-press bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-lg px-8 lg:px-10 py-4 lg:py-5 rounded-2xl flex items-center justify-center gap-3 border border-border transition-all hover:-translate-y-1">
+              <a href="https://github.com/jcalado/voxlink-site/releases/download/v1.5.0/VoxLink.1.5.0.apk" target="_blank" rel="noopener noreferrer" className="btn-press bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-base px-6 lg:px-7 py-3.5 lg:py-4 rounded-2xl flex items-center justify-center gap-3 border border-border transition-all hover:-translate-y-1">
                 {t("hero.pocApk")}
                 <Download className="w-5 h-5" />
               </a>
-              <a href="https://t.me/+7eNqxZZsIrcwYzc0" target="_blank" rel="noopener noreferrer" className="btn-press bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-lg px-8 lg:px-10 py-4 lg:py-5 rounded-2xl flex items-center justify-center gap-3 border border-border transition-all hover:-translate-y-1">
+              <a href="https://t.me/+7eNqxZZsIrcwYzc0" target="_blank" rel="noopener noreferrer" className="btn-press bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-base px-6 lg:px-7 py-3.5 lg:py-4 rounded-2xl flex items-center justify-center gap-3 border border-border transition-all hover:-translate-y-1">
                 <MessageCircle className="w-5 h-5" />
                 {t("hero.joinCommunity")}
               </a>
@@ -308,11 +308,11 @@ export default function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="https://play.google.com/store/apps/details?id=com.jcalado.voxlink" target="_blank" rel="noopener noreferrer" className="btn-press w-full sm:w-auto bg-vibrant-red hover:bg-red-500 text-white font-bold text-lg px-8 lg:px-10 py-4 lg:py-5 rounded-2xl flex items-center justify-center gap-3 transition-all hover:-translate-y-1">
+            <a href="https://play.google.com/store/apps/details?id=com.jcalado.voxlink" target="_blank" rel="noopener noreferrer" className="btn-press w-full sm:w-auto bg-vibrant-red hover:bg-red-500 text-white font-bold text-base px-6 lg:px-7 py-3.5 lg:py-4 rounded-2xl flex items-center justify-center gap-3 transition-all hover:-translate-y-1">
               {t("nav.getApp")}
               <Download className="w-5 h-5" />
             </a>
-            <a href="/docs" className="btn-press w-full sm:w-auto bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-lg px-8 lg:px-10 py-4 lg:py-5 rounded-2xl flex items-center justify-center gap-3 transition-all border border-border hover:-translate-y-1">
+            <a href="/docs" className="btn-press w-full sm:w-auto bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-base px-6 lg:px-7 py-3.5 lg:py-4 rounded-2xl flex items-center justify-center gap-3 transition-all border border-border hover:-translate-y-1">
               {t("cta.setupGuide")}
               <BookOpen className="w-5 h-5" />
             </a>
