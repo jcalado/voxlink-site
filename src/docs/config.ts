@@ -20,6 +20,7 @@ export const docsConfig: DocGroup[] = [
     label: "Using VoxLink",
     pages: [
       { slug: "ptt-modes", title: "PTT Modes" },
+      { slug: "car-mode", title: "Car Mode" },
       { slug: "audio-settings", title: "Audio Settings" },
       { slug: "server-profiles", title: "Server Profiles" },
       { slug: "talkgroups-nodes", title: "Talkgroups & Nodes" },

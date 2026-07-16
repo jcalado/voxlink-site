@@ -2,14 +2,19 @@
   "nav.screenshots": "Screenshots",
   "nav.features": "Features",
   "nav.docs": "Docs",
-  "nav.getApp": "Play Store",
+
+  "download.label": "Download",
+  "download.playStore": "Play Store",
+  "download.apk": "Android APK",
+  "download.windows": "Windows",
+  "download.linuxAppImage": "Linux · AppImage",
+  "download.linuxDeb": "Linux · .deb",
 
   "hero.badge": "Free to Download",
-  "hero.pocApk": "PoC APK",
   "hero.title1": "Talk to the",
   "hero.title2": "World.",
   "hero.subtitle": "Connect to SvxLink reflectors worldwide from your phone. VoxLink gives you push-to-talk access to any talkgroup — no extra hardware needed.",
-  "hero.joinCommunity": "Join the Community",
+  "hero.joinCommunity": "Telegram Group",
 
   "screenshots.ptt": "PTT",
   "screenshots.servers": "Servers",
@@ -121,6 +126,7 @@
   "docs.page.installation": "Installation",
   "docs.page.firstConnection": "First Connection",
   "docs.page.pttModes": "PTT Modes",
+  "docs.page.carMode": "Car Mode",
   "docs.page.audioSettings": "Audio Settings",
   "docs.page.serverProfiles": "Server Profiles",
   "docs.page.talkgroupsNodes": "Talkgroups & Nodes",
@@ -129,5 +135,8 @@
   "docs.page.backgroundOperation": "Background Operation",
   "docs.page.troubleshooting": "Troubleshooting",
   "docs.page.changelog": "Changelog",
-  "docs.onThisPage": "On this page"
+  "docs.onThisPage": "On this page",
+
+  "changelog.subtitle": "What's new in VoxLink, release by release.",
+  "changelog.latest": "Latest"
 }

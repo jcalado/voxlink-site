@@ -1,5 +1,30 @@
 # Registo de Alterações
 
+## 1.6.0
+
+### Novidades
+
+- **O VoxLink chega ao desktop** — esta é a **primeira versão para Windows e Linux**! Transfira um instalador Windows (MSIX) ou um **AppImage** ou **.deb** para Linux.
+- **Modo Carro** — um ecrã de condução em ecrã inteiro e legível de relance: indicativo grande, estado **NO AR** / **A RECEBER**, uma barra de talkgroups favoritos (ou um seletor simples para cima/baixo nos rádios compactos) e um distintivo de pesquisa. Abra-o pelo ícone do carro no ecrã PTT, pelo menu de navegação, por uma tecla de hardware associada, ou automaticamente ao ligar um carregador, ao ligar um dispositivo Bluetooth escolhido, ou no arranque da aplicação. Mantém o ecrã ligado, com brilho máximo opcional.
+- **Botões de PTT por Bluetooth** — transmita e mude de talkgroup diretamente pelos botões de um acessório de PTT por Bluetooth compatível (**Definições > Controlos de hardware**).
+- **Volume extra** — um reforço de altifalante opcional (**Definições > Áudio**) que aumenta o volume de RX para além do limite normal, útil em ambientes ruidosos.
+- **Ícone na área de notificação** no desktop, com um menu Mostrar / Desligar / Sair e a opção **Minimizar para a área de notificação**, que o mantém ligado ao fechar a janela.
+- As ligações **`voxlink://`** passam a abrir a aplicação desktop.
+
+### Alterado
+
+- No desktop, a aplicação **impede o computador de suspender** enquanto está ligado, deixando de perder o refletor ou o APRS quando a máquina fica inativa.
+- Só corre uma cópia da aplicação desktop de cada vez — ao abrir novamente, a janela existente vem para a frente.
+- **PTT instantâneo por premir e manter** com o rato no desktop, e o botão PTT fica focado no arranque para que Espaço/Enter transmitam de imediato.
+- As definições ocultam as opções que não se aplicam no desktop.
+- Rádios compactos: os controlos deslizantes das definições passam a ocupar a sua própria linha, e o ecrã PTT tem uma leitura de talkgroup mais limpa e um alvo de toque de menu maior.
+
+### Corrigido
+
+- O APRS-IS passa a desligar-se de forma limpa ao sair da aplicação.
+- Tocar em **Desligar** na notificação termina agora totalmente a sessão.
+- Fechar a janela no desktop passa a encerrar as ligações de voz e APRS antes de sair.
+
 ## 1.5.0
 
 ### Novidades
@@ -10,7 +35,7 @@
 - **Sair** a partir do menu de navegação.
 - **Hytera P50** — associa automaticamente o seletor (dial) de talkgroup.
 - **Ocultar o botão PTT do ecrã** — para quem usa VOX ou PTT externo.
-- Suporte para **ambiente de trabalho Linux**.
+- Suporte para **Linux desktop**.
 
 ### Alterado
 

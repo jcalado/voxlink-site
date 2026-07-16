@@ -3,7 +3,6 @@ import { motion } from "motion/react";
 import {
   Mic,
   Activity,
-  Download,
   BookOpen,
   Radio,
   Wifi,
@@ -14,6 +13,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
+import { DownloadMenu } from "./DownloadMenu";
 import { useLanguage } from "./i18n/LanguageContext";
 import { LanguageSwitcher } from "./i18n/LanguageSwitcher";
 
@@ -38,9 +38,10 @@ export default function App() {
 
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <a href="https://play.google.com/store/apps/details?id=com.jcalado.voxlink" target="_blank" rel="noopener noreferrer" className="btn-press bg-vibrant-red hover:bg-red-500 text-white px-6 lg:px-8 py-2.5 lg:py-3 rounded-2xl font-bold hover:scale-105 transition-all">
-              {t("nav.getApp")}
-            </a>
+            <DownloadMenu
+              align="right"
+              triggerClassName="btn-press inline-flex items-center gap-2 bg-vibrant-red hover:bg-red-500 text-white px-5 lg:px-6 py-2.5 lg:py-3 rounded-2xl font-bold hover:scale-105 transition-all"
+            />
           </div>
         </div>
       </nav>
@@ -99,14 +100,9 @@ export default function App() {
               transition={{ duration: 0.5, delay: 0.45 }}
               className="grid w-full max-w-md grid-cols-1 gap-1.5 rounded-3xl border border-border bg-surface-raised/40 p-1.5 mx-auto sm:inline-flex sm:w-auto sm:max-w-none sm:flex-wrap sm:items-center sm:gap-1.5 sm:rounded-full lg:mx-0"
             >
-              <a href="https://play.google.com/store/apps/details?id=com.jcalado.voxlink" target="_blank" rel="noopener noreferrer" className="btn-press inline-flex items-center justify-center gap-2.5 rounded-full text-base px-6 py-4 transition-colors whitespace-nowrap bg-vibrant-red hover:bg-red-500 text-white font-bold">
-                <Download className="w-5 h-5" />
-                {t("nav.getApp")}
-              </a>
-              <a href="https://github.com/jcalado/voxlink-site/releases/download/v1.5.0/VoxLink.1.5.0.apk" target="_blank" rel="noopener noreferrer" className="btn-press inline-flex items-center justify-center gap-2.5 rounded-full text-base px-6 py-4 transition-colors whitespace-nowrap bg-white/10 hover:bg-white/15 text-white font-bold">
-                <Download className="w-5 h-5" />
-                {t("hero.pocApk")}
-              </a>
+              <DownloadMenu
+                triggerClassName="btn-press inline-flex items-center justify-center gap-2.5 rounded-full text-base px-6 py-4 transition-colors whitespace-nowrap bg-vibrant-red hover:bg-red-500 text-white font-bold"
+              />
               <a href="https://t.me/+7eNqxZZsIrcwYzc0" target="_blank" rel="noopener noreferrer" className="btn-press inline-flex items-center justify-center gap-2.5 rounded-full text-base px-6 py-4 transition-colors whitespace-nowrap bg-white/5 hover:bg-white/10 text-on-surface font-semibold">
                 <MessageCircle className="w-5 h-5" />
                 {t("hero.joinCommunity")}
@@ -311,10 +307,10 @@ export default function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="https://play.google.com/store/apps/details?id=com.jcalado.voxlink" target="_blank" rel="noopener noreferrer" className="btn-press w-full sm:w-auto bg-vibrant-red hover:bg-red-500 text-white font-bold text-base px-6 lg:px-7 py-3.5 lg:py-4 rounded-2xl flex items-center justify-center gap-3 transition-all hover:-translate-y-1">
-              {t("nav.getApp")}
-              <Download className="w-5 h-5" />
-            </a>
+            <DownloadMenu
+              className="w-full sm:w-auto"
+              triggerClassName="btn-press w-full sm:w-auto bg-vibrant-red hover:bg-red-500 text-white font-bold text-base px-6 lg:px-7 py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-3 transition-all hover:-translate-y-1"
+            />
             <a href="/docs" className="btn-press w-full sm:w-auto bg-surface-raised hover:bg-surface-raised/80 text-white font-bold text-base px-6 lg:px-7 py-3.5 lg:py-4 rounded-2xl flex items-center justify-center gap-3 transition-all border border-border hover:-translate-y-1">
               {t("cta.setupGuide")}
               <BookOpen className="w-5 h-5" />

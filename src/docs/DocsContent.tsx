@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
 import { getAdjacentPages, getPageBySlug } from "./config";
+import { Changelog } from "./Changelog";
 import { useLanguage } from "../i18n/LanguageContext";
 import "./docs.css";
 
@@ -8,6 +9,7 @@ const pageTitleKeys: Record<string, string> = {
   "installation": "docs.page.installation",
   "first-connection": "docs.page.firstConnection",
   "ptt-modes": "docs.page.pttModes",
+  "car-mode": "docs.page.carMode",
   "audio-settings": "docs.page.audioSettings",
   "server-profiles": "docs.page.serverProfiles",
   "talkgroups-nodes": "docs.page.talkgroupsNodes",
@@ -88,8 +90,12 @@ export function DocsContent({ slug, html }: { slug: string; html: string }) {
 
   return (
     <main className="flex-1 p-6 lg:py-10 lg:px-12 overflow-y-auto bg-community-bg">
-      <div className="max-w-[680px]">
-        <div className="prose js-toc-content" dangerouslySetInnerHTML={{ __html: html }} onClick={handleClick} />
+      <div className={slug === "changelog" ? "max-w-[820px]" : "max-w-[680px]"}>
+        {slug === "changelog" ? (
+          <Changelog html={html} />
+        ) : (
+          <div className="prose js-toc-content" dangerouslySetInnerHTML={{ __html: html }} onClick={handleClick} />
+        )}
         {(prev || next) && (
           <div className="flex justify-between items-start mt-12 pt-6 border-t border-border">
             {prev ? (

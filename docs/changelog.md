@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.6.0
+
+### New
+
+- **VoxLink comes to the desktop** — this is the **first release for Windows and Linux**! Download a Windows installer (MSIX) or a Linux **AppImage** or **.deb**.
+- **Car Mode** — a full-screen, glanceable driving screen: a big callsign, **ON AIR** / **RECEIVING** status, a favourites talkgroup rail (or a simple up/down cycler on compact radios), and a scan badge. Open it from the car icon on the PTT screen, the navigation drawer, a bound hardware key, or automatically when you plug in a charger, connect a chosen Bluetooth device, or launch the app. Keeps the screen on, with optional full brightness.
+- **Bluetooth PTT buttons** — transmit and cycle talkgroups straight from a supported Bluetooth PTT accessory (**Settings > Hardware controls**).
+- **Extra loudness** — an optional speaker boost (**Settings > Audio**) that pushes RX volume past the normal ceiling for noisy environments.
+- **System tray** on desktop, with a Show / Disconnect / Quit menu and an optional **Close to system tray** that keeps you connected when you close the window.
+- **`voxlink://` links** now open the desktop app.
+
+### Changed
+
+- Desktop **keeps your machine awake** while connected, so it no longer drops the reflector or APRS when the computer goes idle.
+- Only one copy of the desktop app runs at a time — launching again brings the existing window to the front.
+- **Instant click-and-hold PTT** with the mouse on desktop, and the PTT button is focused on launch so Space/Enter transmit right away.
+- Settings hide the rows that don't apply on desktop.
+- Compact radios: settings sliders now sit on their own row, and the PTT screen has a cleaner talkgroup readout and a bigger menu tap target.
+
+### Fixed
+
+- APRS-IS now disconnects cleanly when you quit the app.
+- Tapping **Disconnect** in the notification fully ends the session.
+- Closing the desktop window now tears down voice and APRS connections before exiting.
+
 ## 1.5.0
 
 ### New

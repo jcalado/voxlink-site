@@ -61,7 +61,7 @@ export function DocsLayout() {
       <div className="flex">
         <DocsSidebar activeSlug={slug} open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
         {page && html ? <DocsContent slug={slug} html={html} /> : <DocsContent slug={slug} html="" />}
-        {page && html && <DocsToc slug={slug} hasContent={!!html} />}
+        {page && html && slug !== "changelog" && <DocsToc slug={slug} hasContent={!!html} />}
       </div>
     </div>
   );
