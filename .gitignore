@@ -9,3 +9,4 @@ dist/
 Thumbs.db
 .superpowers
 docs/superpowers
+.playwright-mcp/
