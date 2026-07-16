@@ -32,13 +32,13 @@ const DOWNLOADS: DownloadItem[] = [
   {
     key: "apk",
     labelKey: "download.apk",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.6.0/VoxLink.1.6.0.apk",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.6.0/voxlink-1.6.0.apk",
     Icon: Download,
   },
   {
     key: "windows",
     labelKey: "download.windows",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.6.0/VoxLink-1.6.0.msix",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.6.0/VoxLink-1.6.0-setup.exe",
     Icon: Monitor,
     external: true,
   },
