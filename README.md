@@ -1,6 +1,6 @@
 # VoxLink Site
 
-Landing page and documentation site for [VoxLink](https://voxlink.app) — a modern PTT (Push-to-Talk) client for SvxLink radio reflectors.
+Landing page and documentation site for [VoxLink](https://voxlink.jcalado.com) — a modern PTT (Push-to-Talk) client for SvxLink radio reflectors.
 
 <div align="center">
   <img src="public/app-screenshot.png" alt="VoxLink app screenshot" width="300" />
