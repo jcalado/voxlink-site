@@ -51,9 +51,11 @@ There are three ways to monitor a talkgroup:
 2. **Toggle from the picker** — Tap the talkgroup selector on the PTT screen and toggle the headphones icon next to any preset. Changes persist as the preset's default.
 3. **Monitor an arbitrary TG** — In the picker, tap **Monitor another TG…**, type a number, and confirm. The TG is added as a monitored channel for this server (no preset needed). Toggle its headphones icon again later to stop monitoring it.
 
-Monitored talkgroups appear on the PTT screen below the main talkgroup indicator. You transmit on your primary talkgroup only — monitoring is receive-only.
+Monitored talkgroups are shown with a headphones icon in the talkgroup list, so you can see the whole set at a glance. You transmit on your primary talkgroup only — monitoring is receive-only.
 
 > Monitoring is useful for keeping an ear on a net or emergency channel while working a different talkgroup.
+
+VoxLink can also move you to a monitored talkgroup on its own when it comes alive, and bring you back when it goes quiet — see [Auto-switch](/docs/auto-switch).
 
 ---
 

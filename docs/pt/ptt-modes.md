@@ -33,3 +33,24 @@ Termina automaticamente a sua transmissão após uma duração definida. Configu
 - **Aviso** — vibra **15 segundos** antes do timeout (configurável de **5–30 s** em **Definições > PTT > Aviso TOT**, ou desative completamente).
 
 > O TOT ajuda a prevenir transmissões acidentalmente bloqueadas no modo Latch e é útil em redes com limites de tempo de transmissão.
+
+## Controlos do Ecrã PTT
+
+O que aparece no ecrã PTT é uma escolha sua, em **Definições > Controlos do ecrã PTT**.
+
+| Definição | O que faz |
+|---|---|
+| **Gravação** | Captura áudio localmente enquanto está ligado — ver [Gravação](/docs/recording) |
+| **Reprodução de ficheiro** | Transmite um ficheiro de áudio para um talkgroup |
+| **Mostrar opção de sair** | Acrescenta um item **Sair** ao menu de ligação do ecrã PTT |
+| **Mostrar botão de silêncio** | Coloca um botão de **silêncio** no cabeçalho |
+| **Mostrar cronómetros** | Tempo de TX decorrido e contagem do TOT no ecrã PTT |
+| **Ocultar botão de PTT** | Remove o botão no ecrã — só faz efeito quando há uma tecla de PTT externa associada ou o VOX está ativo |
+
+### Silenciar
+
+**Mostrar botão de silêncio** acrescenta um ícone de altifalante ao cabeçalho do ecrã PTT. Toque nele para silenciar o áudio recebido sem mexer no volume — útil quando alguém entra na sala a meio de uma rede e prefere não perder a sua regulação de volume só para ficar em silêncio. Toque novamente para voltar a ouvir.
+
+Silenciar cala o altifalante e mais nada. A medição e a gravação correm a partir do áudio antes de ser anulado, por isso a barra de RX continua a mostrar que alguém está a falar e uma gravação em curso continua a captá-lo — silenciar é sobre não ouvir uma chamada, não sobre fingir que ela não aconteceu. Pode continuar a transmitir enquanto está em silêncio.
+
+O silêncio não é deliberadamente memorizado entre arranques. É uma ação operacional — cala-se o rádio para uma reunião, não para sempre — e um rádio que voltasse de um reinício ainda mudo estaria avariado da pior maneira. O cursor de **Volume RX** nas [Definições de Áudio](/docs/audio-settings) é o controlo permanente.

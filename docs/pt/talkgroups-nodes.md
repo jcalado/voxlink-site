@@ -51,9 +51,11 @@ Há três formas de monitorizar um talkgroup:
 2. **A partir do seletor** — Toque no seletor de talkgroup no ecrã PTT e ative o ícone de auscultadores junto a qualquer preset. As alterações persistem como o valor por omissão do preset.
 3. **Monitorizar um TG arbitrário** — No seletor, toque em **Monitorizar outro TG…**, escreva um número e confirme. O TG é adicionado como canal monitorizado para este servidor (sem necessidade de preset). Ative novamente o ícone de auscultadores depois para deixar de monitorizar.
 
-Os talkgroups monitorizados aparecem no ecrã PTT abaixo do indicador do talkgroup principal. Transmite apenas no seu talkgroup principal — a monitorização é apenas de receção.
+Os talkgroups monitorizados são apresentados com um ícone de auscultadores na lista de talkgroups, para que veja todo o conjunto de relance. Transmite apenas no seu talkgroup principal — a monitorização é apenas de receção.
 
 > A monitorização é útil para manter um ouvido numa rede ou canal de emergência enquanto trabalha num talkgroup diferente.
+
+O VoxLink também o pode levar sozinho a um talkgroup monitorizado quando este ganha vida, e trazê-lo de volta quando ficar em silêncio — ver [Mudança automática](/docs/auto-switch).
 
 ---
 

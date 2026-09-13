@@ -1,5 +1,34 @@
 # Registo de Alterações
 
+## 1.7.0
+
+### Novidades
+
+- **Tema claro** — o VoxLink passa a ter tema claro além do escuro, ou pode seguir a definição do próprio dispositivo (**Definições > Interface**).
+- **Mudança automática** — deixe o VoxLink acompanhar o tráfego. Arraste os talkgroups para a ordem de prioridade que quiser e ele muda para o mais ativo de entre os que lhe interessam. **Fixe** um talkgroup quando quiser ficar onde está e, sempre que houver uma mudança, um aviso informa-o — com **Ficar** e **Anular** à mão.
+- **Menu em grelha nos rádios compactos** — o menu de navegação passa a ser uma grelha de ícones em vez de um painel deslizante, mais fácil de acertar com o D-pad ou com o polegar, e abre já com o cursor no ecrã em que se encontra.
+- **Painel de instrumentos no Modo Carro** — grande, legível de relance e feito para ser lido à distância de um braço, tanto nos telemóveis e suportes de tablier como nos rádios compactos.
+- **Botão de silêncio no ecrã PTT** — opcional, mesmo no cabeçalho.
+- **Hytera P50** — o LED de estado do rádio passa a funcionar com o VoxLink, com uma pulsação verde opcional enquanto está ligado. As chamadas recebidas aparecem no cartão de chamada do ecrã principal do rádio, e o seletor (dial) de canal percorre os talkgroups.
+
+### Alterado
+
+- As definições de escolha única passam a abrir numa lista em ecrã inteiro em vez de uma lista pendente apertada — incluindo o **tempo de espera do VOX** e as opções de APRS.
+- Ícones coloridos no ecrã inicial das definições, e uma nova secção **Interface**.
+- O scan e a mudança automática passam a funcionar como uma só função, em vez de competirem entre si.
+- Os seletores manuais de talkgroup saem da frente enquanto a mudança automática está ativa.
+- O ecrã PTT deixa de mostrar a linha redundante "A monitorizar:" por baixo do talkgroup ativo.
+- O registo de atividade do Modo Carro passa a alinhar-se em colunas, em vez de se desfazer em linhas partidas.
+- O controlo deslizante de sensibilidade do VOX passa finalmente a ocupar a largura de que precisa.
+
+### Corrigido
+
+- A luz **PEAK** do Modo Carro acende agora nos picos reais de áudio, voltando a ter significado.
+- As reconexões passam a abrandar progressivamente em vez de martelar o servidor, e deixam de desistir por causa de uma falha momentânea — só quando o servidor rejeita mesmo as credenciais.
+- As oscilações entre Wi-Fi e dados móveis deixam de provocar uma sucessão de reconexões.
+- Com rede má, o áudio passa a desvanecer para silêncio em vez de se arrastar num som robótico.
+- O nome do servidor deixa de mudar consoante o talkgroup em que se encontra.
+
 ## 1.6.0
 
 ### Novidades
