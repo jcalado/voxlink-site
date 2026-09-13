@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.7.0
+
+### New
+
+- **Light theme** — VoxLink now comes in Light as well as Dark, or it can follow your device's own setting (**Settings > Interface**).
+- **Auto-switch** — let VoxLink follow the traffic. Drag your talkgroups into a priority order and it moves to the busiest one that matters most to you. **Pin** a talkgroup when you want to stay put, and whenever it does switch, a banner tells you — with **Stay** and **Undo** right there.
+- **A launcher-style menu on compact radios** — the navigation menu is now a grid of icons rather than a slide-out panel, easier to hit with a D-pad or a thumb, and it opens with the cursor already on the screen you're on.
+- **An instrument-panel face for Car Mode** — big, glanceable and made to be read at arm's length, on phones, dash mounts and compact radios alike.
+- **Mute button on the PTT screen** — optional, right in the header.
+- **Hytera P50** — the radio's status LED now works with VoxLink, with an optional green heartbeat while you're connected. Incoming calls show up on the radio's home-screen call card, and the channel knob steps talkgroups up and down.
+
+### Changed
+
+- Settings that make you pick one option now open as a full-screen list instead of a cramped dropdown — including **VOX hang time** and the APRS options.
+- Colourful icon chips on the settings landing, and a new **Interface** section.
+- Scanning and auto-switch now behave as one feature instead of fighting each other.
+- The manual talkgroup pickers get out of the way while auto-switch is running.
+- The PTT screen drops the redundant "Monitoring:" line under the active talkgroup.
+- Car Mode's activity log lines up in columns instead of wrapping into a mess.
+- The VOX sensitivity slider finally gets the full width it needs.
+
+### Fixed
+
+- Car Mode's **PEAK** lamp now lights on real audio peaks, so it means something again.
+- Reconnects back off gracefully instead of hammering the server, and no longer give up over a hiccup — only when the server actually rejects your login.
+- Flapping Wi-Fi / mobile handovers no longer trigger a storm of reconnects.
+- Bad network now fades to silence instead of stretching audio into a robotic smear.
+- Server names no longer change depending on which talkgroup you're on.
+
 ## 1.6.0
 
 ### New
