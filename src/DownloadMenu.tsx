@@ -19,7 +19,7 @@ type DownloadItem = {
 };
 
 // Direct, version-pinned download assets. Every build — Android APK plus the
-// desktop MSIX / AppImage / .deb — is published to the voxlink-site repo's
+// Windows installer / AppImage / .deb — is published to the voxlink-site repo's
 // releases. Bump the version in these URLs on each release.
 const DOWNLOADS: DownloadItem[] = [
   {
@@ -32,27 +32,27 @@ const DOWNLOADS: DownloadItem[] = [
   {
     key: "apk",
     labelKey: "download.apk",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.6.0/voxlink-1.6.0.apk",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.7.0/voxlink-1.7.0.apk",
     Icon: Download,
   },
   {
     key: "windows",
     labelKey: "download.windows",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.6.0/VoxLink-1.6.0-setup.exe",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.7.0/VoxLink-1.7.0-setup.exe",
     Icon: Monitor,
     external: true,
   },
   {
     key: "linuxAppImage",
     labelKey: "download.linuxAppImage",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.6.0/VoxLink-1.6.0-x86_64.AppImage",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.7.0/VoxLink-1.7.0-x86_64.AppImage",
     Icon: Terminal,
     external: true,
   },
   {
     key: "linuxDeb",
     labelKey: "download.linuxDeb",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.6.0/voxlink_1.6.0_amd64.deb",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.7.0/voxlink_1.7.0_amd64.deb",
     Icon: Terminal,
     external: true,
   },
