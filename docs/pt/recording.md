@@ -42,6 +42,6 @@ As gravações são guardadas como ficheiros WAV padrão (16 kHz, 16-bit PCM mon
 | **Tamanho aprox.** | ~2 MB por minuto |
 | **Nome do ficheiro** | `TG{número}_{AAAAMMDD_HHMMSS}.wav` |
 
-As gravações são armazenadas no diretório privado da aplicação VoxLink. Não são visíveis na aplicação Ficheiros do Android — use o ecrã de Gravações na aplicação para as gerir.
+No Android, as gravações são armazenadas no diretório privado da aplicação VoxLink. Não são visíveis na aplicação Ficheiros do Android — use o ecrã de Gravações na aplicação para as gerir. No iPhone e no iPad, as gravações aparecem também na aplicação Ficheiros.
 
 > Para libertar espaço, deslize uma gravação para a eliminar. Gravações eliminadas não podem ser recuperadas.

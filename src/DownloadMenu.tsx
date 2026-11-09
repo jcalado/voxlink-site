@@ -4,6 +4,7 @@ import type { LucideIcon } from "lucide-react";
 import {
   ChevronDown,
   Download,
+  Laptop,
   Smartphone,
   Monitor,
   Terminal,
@@ -19,8 +20,8 @@ type DownloadItem = {
 };
 
 // Direct, version-pinned download assets. Every build — Android APK plus the
-// Windows installer / AppImage / .deb — is published to the voxlink-site repo's
-// releases. Bump the version in these URLs on each release.
+// macOS .dmg / Windows installer / AppImage / .deb — is published to the
+// voxlink-site repo's releases. Bump the version in these URLs on each release.
 const DOWNLOADS: DownloadItem[] = [
   {
     key: "playStore",
@@ -32,27 +33,34 @@ const DOWNLOADS: DownloadItem[] = [
   {
     key: "apk",
     labelKey: "download.apk",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.7.0/voxlink-1.7.0.apk",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.8.0/voxlink-1.8.0.apk",
     Icon: Download,
+  },
+  {
+    key: "macos",
+    labelKey: "download.macos",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.8.0/VoxLink-1.8.0.dmg",
+    Icon: Laptop,
+    external: true,
   },
   {
     key: "windows",
     labelKey: "download.windows",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.7.0/VoxLink-1.7.0-setup.exe",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.8.0/VoxLink-1.8.0-setup.exe",
     Icon: Monitor,
     external: true,
   },
   {
     key: "linuxAppImage",
     labelKey: "download.linuxAppImage",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.7.0/VoxLink-1.7.0-x86_64.AppImage",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.8.0/VoxLink-1.8.0-x86_64.AppImage",
     Icon: Terminal,
     external: true,
   },
   {
     key: "linuxDeb",
     labelKey: "download.linuxDeb",
-    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.7.0/voxlink_1.7.0_amd64.deb",
+    href: "https://github.com/jcalado/voxlink-site/releases/download/v1.8.0/voxlink_1.8.0_amd64.deb",
     Icon: Terminal,
     external: true,
   },

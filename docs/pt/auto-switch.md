@@ -103,6 +103,7 @@ Com o modo em **Desligado**, os talkgroups monitorizados continuam a chamar a su
 
 - Um aviso no ecrã PTT indica o talkgroup ativo (ou *3 TGs monitorizados ativos*) com um botão **Mudar** para uma mudança manual num toque.
 - Se a aplicação estiver em segundo plano, uma notificação do sistema anuncia a atividade e o indicativo; tocar nela muda-o de talkgroup e **guarda** essa escolha, porque tocar é uma decisão explícita. Desligue-as em **Definições > Notificações > Talkgroups monitorizados**.
+- No macOS e no iOS, estes alertas têm também duas ações: **Mudar** leva-o para esse talkgroup e **Silenciar 1 Hora** cala os respetivos alertas durante uma hora. O silêncio fica apenas em memória, pelo que um reinício o elimina.
 
 ## Resumo das definições
 

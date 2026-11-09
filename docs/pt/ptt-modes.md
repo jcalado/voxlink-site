@@ -4,6 +4,8 @@ O VoxLink tem três modos push-to-talk. Alterne entre eles em **Definições > P
 
 ![Ecrã PTT](/docs/ptt-screen.webp)
 
+> Numa janela larga ou num tablet, o ecrã PTT transforma-se numa consola com os seus canais ao lado — veja [Computador e macOS](/docs/desktop#consola-ptt).
+
 ## Latch (Predefinido)
 
 Toque no botão **PTT** para começar a transmitir, toque novamente para parar. Ideal para transmissões mais longas onde manter o botão pressionado não é prático.

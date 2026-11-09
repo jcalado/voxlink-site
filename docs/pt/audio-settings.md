@@ -2,7 +2,7 @@
 
 Configure o áudio em **Definições > Áudio**.
 
-> No Windows e no Linux, o VoxLink mostra apenas a secção **Volume** — ganho do microfone e volume RX. O encaminhamento de áudio, o modo de áudio Bluetooth, a fonte de entrada e o volume extra são conceitos do Android, pelo que a versão para computador deixa isso para as definições de som do seu sistema operativo.
+> No macOS, no Windows e no Linux, o VoxLink mostra apenas a secção **Volume** — ganho do microfone e volume RX. O encaminhamento de áudio, o modo de áudio Bluetooth, a fonte de entrada e o volume extra são conceitos do Android, pelo que a versão para computador deixa isso para as definições de som do seu sistema operativo.
 
 ![Definições de áudio](/docs/settings-screen.webp)
 

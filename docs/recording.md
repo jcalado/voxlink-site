@@ -42,6 +42,6 @@ Recordings are saved as standard WAV files (16 kHz, 16-bit PCM mono) — compati
 | **Approx. size** | ~2 MB per minute |
 | **Filename** | `TG{number}_{YYYYMMDD_HHMMSS}.wav` |
 
-Recordings are stored in VoxLink's private app directory. They are not visible in the Android Files app — use the in-app Recordings screen to manage them.
+On Android, recordings are stored in VoxLink's private app directory. They are not visible in the Android Files app — use the in-app Recordings screen to manage them. On iPhone and iPad, recordings also appear in the Files app.
 
 > To free up space, swipe a recording to delete it. Deleted recordings cannot be recovered.

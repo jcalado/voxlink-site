@@ -2,7 +2,7 @@
 
 Configure audio in **Settings > Audio**.
 
-> On Windows and Linux, VoxLink shows only the **Volume** section — mic gain and RX volume. Audio routing, Bluetooth audio mode, input source, and extra loudness are Android concepts, so the desktop app leaves those to your operating system's own sound settings.
+> On macOS, Windows and Linux, VoxLink shows only the **Volume** section — mic gain and RX volume. Audio routing, Bluetooth audio mode, input source, and extra loudness are Android concepts, so the desktop app leaves those to your operating system's own sound settings.
 
 ![Audio settings](/docs/settings-screen.webp)
 

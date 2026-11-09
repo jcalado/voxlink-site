@@ -22,7 +22,7 @@ O VoxLink já não é só escuro.
 
 ## Cor de destaque
 
-**Definições > Interface > Cor de destaque** tinge botões, realces e estados ativos. Escolha **Sistema** para acompanhar a cor de destaque do próprio dispositivo (cores Material do Android 12+), ou escolha entre Vermelho, Rosa, Roxo, Roxo Escuro, Índigo, Azul, Turquesa, Verde, Lima, Amarelo, Âmbar e Laranja.
+**Definições > Interface > Cor de destaque** tinge botões, realces e estados ativos. Escolha **Sistema** para acompanhar a cor de destaque do próprio dispositivo (cores Material do Android 12+, ou a cor de destaque do Mac no macOS), ou escolha entre Vermelho, Rosa, Roxo, Roxo Escuro, Índigo, Azul, Turquesa, Verde, Lima, Amarelo, Âmbar e Laranja.
 
 ## Itens do menu
 

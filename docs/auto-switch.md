@@ -103,6 +103,7 @@ With the mode set to **Off**, monitored talkgroups still get your attention — 
 
 - A banner on the PTT screen names the live talkgroup (or *3 monitored TGs active*) with a **Switch** button for a one-tap manual move.
 - If the app is in the background, an OS notification announces the activity and the callsign; tapping it switches you and **saves** the talkgroup, because tapping it is an explicit choice. Turn these off under **Settings > Notifications > Monitored talkgroups**.
+- On macOS and iOS, these alerts also carry two actions: **Switch** moves you to that talkgroup, and **Mute for 1 Hour** silences its alerts for an hour. The mute is held in memory, so a restart clears it.
 
 ## Settings summary
 
