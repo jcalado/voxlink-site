@@ -1,6 +1,6 @@
 # Instalação
 
-O VoxLink funciona em telemóveis Android e rádios PoC, e em computadores Windows e Linux.
+O VoxLink funciona em telemóveis Android e rádios PoC, e em computadores macOS, Windows e Linux. Uma versão para iPhone e iPad está a caminho da App Store.
 
 ## Android
 
@@ -42,13 +42,23 @@ Se a recusou por engano: **Definições > Aplicações > VoxLink > Permissões >
 
 ---
 
+## iPhone e iPad
+
+O VoxLink para iOS é distribuído pela App Store e não a partir deste site. Encontra-se em revisão, pelo que ainda não está disponível para instalar.
+
+---
+
 ## Computador
 
 ![VoxLink no computador](/docs/desktop-app.webp)
 
-A versão para computador é a mesma aplicação, com uma barra de navegação lateral em vez da barra inferior. Tudo o que não depende do hardware do telemóvel funciona da mesma forma — servidores, talkgroups, modos de PTT, gravação, APRS, Modo Carro.
+No Windows e no Linux, a versão para computador é a mesma aplicação, com uma barra de navegação lateral em vez da barra inferior. No macOS é uma aplicação Mac nativa, com barra lateral, barra de ferramentas e barra de menus próprias. Tudo o que não depende do hardware do telemóvel funciona da mesma forma nos três sistemas — servidores, talkgroups, modos de PTT, gravação, APRS, Modo Carro. Para o layout de consola e os atalhos do Mac, veja [Computador e macOS](/docs/desktop).
 
-Escolha uma versão no menu **Descarregar** do site.
+Escolha uma versão no menu **Download** do site.
+
+### macOS
+
+Requer macOS 12 ou superior. Abra `VoxLink-<versão>.dmg` e arraste o **VoxLink** para **Aplicações**. A aplicação é assinada e notarizada, pelo que abre sem qualquer aviso do Gatekeeper. Permita o acesso ao microfone quando o macOS o pedir — é necessário para transmitir.
 
 ### Windows
 
@@ -67,7 +77,7 @@ O `.deb` depende de `libgtk-3-0` e `libayatana-appindicator3-1` (este último fo
 
 ### Área de notificação
 
-Em ambos os sistemas, o VoxLink fica na área de notificação enquanto corre, com um menu **Mostrar / Desligar / Sair**. Ative **Definições > Ligação > Fechar para a área de notificação** e fechar a janela mantém o VoxLink a correr e ligado, em vez de o encerrar.
+No Windows e no Linux, o VoxLink fica na área de notificação enquanto corre, com um menu **Mostrar / Desligar / Sair**. No macOS, o mesmo menu está no [ícone da barra de menus](/docs/desktop#icone-na-barra-de-menus). Nos três sistemas, ative **Definições > Ligação > Fechar para a bandeja do sistema** e fechar a janela mantém o VoxLink a correr e ligado, em vez de o encerrar.
 
 ### O que é diferente no computador
 

@@ -1,5 +1,30 @@
 # Registo de Alterações
 
+## 1.8.0
+
+### Novidades
+
+- **Uma aplicação nativa para macOS** — feita como uma aplicação Mac e não como um layout de telemóvel dentro de uma janela, e a primeira com um `.dmg` assinado e notarizado, que abre sem qualquer aviso do Gatekeeper. Inclui janela nativa, barra lateral e barra de título unificada, uma verdadeira barra de ferramentas, barra de menus com um menu Editar a sério, controlos ao estilo AppKit e barras de deslocamento do Mac, e Definições redesenhadas ao estilo das Definições do Sistema. As cores do sistema macOS substituem a paleta Material, pelo que o VoxLink acompanha a sua cor de destaque e aparência. Saiba mais em [Computador e macOS](/docs/desktop).
+- **PTT no macOS** — janela nativa própria, menu **Canal**, painel na barra de menus e integração com a Dock.
+- **Servidores no macOS** — reconstruídos com folhas de formulário, alertas do sistema, edição de talkgroups no próprio local e reordenação arrastando a linha inteira.
+- **Consola PTT para janelas largas** — o palco de emissão ao lado de uma coluna com canais, atividade e estações, em macOS, Windows e Linux. Depende da largura e não da plataforma: uma janela estreita no computador mantém o layout de telemóvel, e os tablets Android e os dobráveis abertos também ficam com a consola.
+- **Vista de lista e detalhe nos Servidores** em janelas largas no computador, com talkgroups editáveis no próprio local.
+- **iPhone e iPad** — o VoxLink passa a compilar para iOS, com áudio encaminhado para auscultadores Bluetooth e retomado após uma interrupção como uma chamada telefónica, gravações visíveis na aplicação Ficheiros e um ícone Liquid Glass. O iOS é distribuído pela App Store e encontra-se em revisão.
+- **Ações nas notificações** em macOS e iOS — os alertas de talkgroups monitorizados ganham **Mudar** e **Silenciar 1 Hora**. O silêncio fica apenas em memória e termina ao reiniciar a aplicação.
+
+### Alterado
+
+- Compilado com Flutter 3.47.5.
+
+### Corrigido
+
+- Só a estação que está a falar no seu talkgroup ativo aparece como no ar. Antes, quem falasse em qualquer talkgroup monitorizado podia substituir a estação real no ecrã PTT e no cartão de Estações, e limpar a indicação da estação que ainda estava a falar.
+- Abrir ou sair do Modo Carro deixa de provocar um erro de provider.
+- O registo de atividade mostra "agora" até passar mesmo um minuto completo, em vez de saltar para "1m".
+- As linhas das Definições e das Estações pintam corretamente o realce e o efeito de toque.
+- O pedido de permissão de notificações deixa de atrasar o primeiro ecrã.
+- macOS: as versões finais já conseguem abrir o socket UDP de áudio, a permissão de localização do APRS funciona e o texto de pesquisa das Definições é legível no modo escuro.
+
 ## 1.7.0
 
 ### Novidades

@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.8.0
+
+### New
+
+- **A native macOS app** — built like a Mac app rather than a phone layout in a window, and the first with a signed and notarized `.dmg`, so it opens with no Gatekeeper warning. You get a native window, sidebar and unified title bar, a real toolbar, a menu bar with a proper Edit menu, AppKit-style controls and Mac scrollbars, and Settings redrawn in the System Settings idiom. macOS system colours replace the Material palette, so VoxLink follows your accent and appearance. More in [Desktop & macOS](/docs/desktop).
+- **PTT on macOS** — its own native window, a **Channel** menu, a menu bar popover and Dock integration.
+- **Servers on macOS** — rebuilt with form sheets, system alerts, in-place talkgroup editing and whole-row drag to reorder.
+- **PTT console for wide windows** — the on-air stage beside a column of channels, activity and nodes, on macOS, Windows and Linux. It's driven by width rather than platform, so a narrow desktop window keeps the phone layout, and Android tablets and unfolded foldables get the console too.
+- **Servers list-and-detail layout** on wide desktop windows, with talkgroups editable in place.
+- **iPhone and iPad** — VoxLink now builds for iOS, with audio routing to Bluetooth headsets and resuming after an interruption such as a phone call, recordings that appear in the Files app, and a Liquid Glass icon. iOS is distributed through the App Store and is currently under review.
+- **Notification actions** on macOS and iOS — monitored-talkgroup alerts gain **Switch** and **Mute for 1 Hour**. The mute is held in memory and clears on restart.
+
+### Changed
+
+- Built on Flutter 3.47.5.
+
+### Fixed
+
+- Only the station talking on your active talkgroup shows as on air. Previously a talker on any monitored talkgroup could displace the real one on the PTT screen and in the Nodes card, and clear the flag of the station still speaking.
+- Opening or leaving Car Mode no longer throws a provider error.
+- The activity log reads "now" until a full minute has actually passed, instead of jumping to "1m".
+- Settings and Nodes rows paint their highlight and tap ripple correctly.
+- The notification permission prompt no longer holds back the first frame.
+- macOS: release builds can bind their UDP audio socket, APRS location permission works, and the Settings search placeholder is readable in dark mode.
+
 ## 1.7.0
 
 ### New

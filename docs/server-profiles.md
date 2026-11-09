@@ -4,6 +4,8 @@ Save multiple reflector connections and switch between them quickly.
 
 ![Servers screen](/docs/servers-screen.webp)
 
+> On a wide desktop window, Servers splits into a list and a detail pane, with talkgroups editable in place — see [Desktop & macOS](/docs/desktop#servers-on-wide-windows).
+
 ## Adding a Profile
 
 1. Tap the **Servers** tab, then **+**.

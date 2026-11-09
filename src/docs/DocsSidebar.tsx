@@ -18,6 +18,7 @@ const pageTitleKeys: Record<string, string> = {
   "talkgroups-nodes": "docs.page.talkgroupsNodes",
   "auto-switch": "docs.page.autoSwitch",
   "hardware-controls": "docs.page.hardwareControls",
+  "desktop": "docs.page.desktop",
   "interface": "docs.page.interface",
   "aprs": "docs.page.aprs",
   "recording": "docs.page.recording",

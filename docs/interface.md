@@ -22,7 +22,7 @@ VoxLink is no longer dark-only.
 
 ## Accent colour
 
-**Settings > Interface > Accent Color** tints buttons, highlights and active states. Pick **System** to follow your device's own accent (Android 12+ material colours), or choose from Red, Pink, Purple, Deep Purple, Indigo, Blue, Teal, Green, Lime, Yellow, Amber and Orange.
+**Settings > Interface > Accent Color** tints buttons, highlights and active states. Pick **System** to follow your device's own accent (Android 12+ material colours, or your Mac's accent colour on macOS), or choose from Red, Pink, Purple, Deep Purple, Indigo, Blue, Teal, Green, Lime, Yellow, Amber and Orange.
 
 ## Menu items
 

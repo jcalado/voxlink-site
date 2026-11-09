@@ -26,6 +26,7 @@ export const docsConfig: DocGroup[] = [
       { slug: "talkgroups-nodes", title: "Talkgroups & Nodes" },
       { slug: "auto-switch", title: "Auto-switch" },
       { slug: "hardware-controls", title: "Hardware Controls" },
+      { slug: "desktop", title: "Desktop & macOS" },
       { slug: "interface", title: "Interface" },
       { slug: "aprs", title: "APRS" },
       { slug: "recording", title: "Recording" },

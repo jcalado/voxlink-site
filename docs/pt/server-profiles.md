@@ -4,6 +4,8 @@ Guarde múltiplas ligações a refletores e alterne entre elas rapidamente.
 
 ![Ecrã de servidores](/docs/servers-screen.webp)
 
+> Numa janela larga no computador, os Servidores dividem-se numa lista e num painel de detalhe, com talkgroups editáveis no próprio local — veja [Computador e macOS](/docs/desktop#servidores-em-janelas-largas).
+
 ## Adicionar um Perfil
 
 1. Toque no separador **Servidores**, depois em **+**.

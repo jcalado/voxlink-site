@@ -1,6 +1,6 @@
 # Installation
 
-VoxLink runs on Android phones and PoC radios, and on Windows and Linux desktops.
+VoxLink runs on Android phones and PoC radios, and on macOS, Windows and Linux desktops. An iPhone and iPad version is on its way to the App Store.
 
 ## Android
 
@@ -42,13 +42,23 @@ If you accidentally denied it: **Settings > Apps > VoxLink > Permissions > Micro
 
 ---
 
+## iPhone and iPad
+
+VoxLink for iOS is distributed through the App Store rather than from this site. It's currently under review, so it isn't available to install just yet.
+
+---
+
 ## Desktop
 
 ![VoxLink on the desktop](/docs/desktop-app.webp)
 
-The desktop build is the same app with a navigation rail instead of a bottom bar. Everything that isn't specific to phone hardware works the same way — servers, talkgroups, PTT modes, recording, APRS, Car Mode.
+On Windows and Linux, the desktop build is the same app with a navigation rail instead of a bottom bar. On macOS it's a native Mac app with its own sidebar, toolbar and menu bar. Everything that isn't specific to phone hardware works the same way on all three — servers, talkgroups, PTT modes, recording, APRS, Car Mode. For the console layout and Mac shortcuts, see [Desktop & macOS](/docs/desktop).
 
 Grab a build from the **Download** menu on the site.
+
+### macOS
+
+Requires macOS 12 or later. Open `VoxLink-<version>.dmg` and drag **VoxLink** to **Applications**. The app is signed and notarized, so it opens with no Gatekeeper warning. Allow microphone access when macOS asks — you need it to transmit.
 
 ### Windows
 
@@ -67,7 +77,7 @@ The `.deb` depends on `libgtk-3-0` and `libayatana-appindicator3-1` (the latter 
 
 ### System tray
 
-On both desktop platforms VoxLink lives in the system tray while it runs, with a **Show / Disconnect / Quit** menu. Turn on **Settings > Connection > Close to system tray** and closing the window keeps VoxLink running and connected instead of quitting it.
+On Windows and Linux VoxLink lives in the system tray while it runs, with a **Show / Disconnect / Quit** menu. On macOS the same menu is on its [menu bar icon](/docs/desktop#menu-bar-icon). On all three, turn on **Settings > Connection > Close to system tray** and closing the window keeps VoxLink running and connected instead of quitting it.
 
 ### What's different on desktop
 

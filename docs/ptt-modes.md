@@ -4,6 +4,8 @@ VoxLink has three push-to-talk modes. Switch between them in **Settings > PTT > 
 
 ![PTT screen](/docs/ptt-screen.webp)
 
+> In a wide window or on a tablet, the PTT screen becomes a console with your channels alongside — see [Desktop & macOS](/docs/desktop#ptt-console).
+
 ## Latch (Default)
 
 Tap the **PTT** button to start transmitting, tap again to stop. Good for longer overs where holding the button isn't practical.
