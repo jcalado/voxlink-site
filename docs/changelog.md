@@ -9,7 +9,7 @@
 - **Servers on macOS** — rebuilt with form sheets, system alerts, in-place talkgroup editing and whole-row drag to reorder.
 - **PTT console for wide windows** — the on-air stage beside a column of channels, activity and nodes, on macOS, Windows and Linux. It's driven by width rather than platform, so a narrow desktop window keeps the phone layout, and Android tablets and unfolded foldables get the console too.
 - **Servers list-and-detail layout** on wide desktop windows, with talkgroups editable in place.
-- **iPhone and iPad** — VoxLink now builds for iOS, with audio routing to Bluetooth headsets and resuming after an interruption such as a phone call, recordings that appear in the Files app, and a Liquid Glass icon. iOS is distributed through the App Store and is currently under review.
+- **iPhone and iPad** — VoxLink now builds for iOS, with audio routing to Bluetooth headsets and resuming after an interruption such as a phone call, recordings that appear in the Files app, and a Liquid Glass icon. iOS is distributed through the [App Store](https://apps.apple.com/us/app/voxlink-ptt-for-svxlink/id6819157055) rather than from this site.
 - **Notification actions** on macOS and iOS — monitored-talkgroup alerts gain **Switch** and **Mute for 1 Hour**. The mute is held in memory and clears on restart.
 
 ### Changed

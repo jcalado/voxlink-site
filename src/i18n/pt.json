@@ -5,6 +5,7 @@
 
   "download.label": "Download",
   "download.playStore": "Play Store",
+  "download.appStore": "App Store",
   "download.apk": "APK Android",
   "download.macos": "macOS",
   "download.windows": "Windows",
@@ -38,7 +39,7 @@
   "features.recording.description": "Grave os seus QSOs com um toque. Navegue, reproduza e partilhe gravações guardadas a partir de uma biblioteca integrada.",
 
   "cta.heading": "Entre no Ar",
-  "cta.description": "Gratuito no Android, sem necessidade de conta. Instale o VoxLink, adicione o seu refletor e está no ar.",
+  "cta.description": "Gratuito no iPhone e no Android, sem necessidade de conta. Instale o VoxLink, adicione o seu refletor e está no ar.",
   "cta.setupGuide": "Guia de Instalação",
   "cta.hamtetra": "Pedir Acesso ao Refletor",
 
