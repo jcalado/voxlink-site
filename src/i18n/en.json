@@ -5,6 +5,7 @@
 
   "download.label": "Download",
   "download.playStore": "Play Store",
+  "download.appStore": "App Store",
   "download.apk": "Android APK",
   "download.macos": "macOS",
   "download.windows": "Windows",
@@ -38,7 +39,7 @@
   "features.recording.description": "Record your QSOs with one tap. Browse, play back, and share saved recordings from a built-in library.",
 
   "cta.heading": "Get on the Air",
-  "cta.description": "Free on Android, no account needed. Install VoxLink, add your reflector, and you're on the air.",
+  "cta.description": "Free on iPhone and Android, no account needed. Install VoxLink, add your reflector, and you're on the air.",
   "cta.setupGuide": "Setup Guide",
   "cta.hamtetra": "Request Reflector Access",
 

@@ -1,6 +1,6 @@
 # Installation
 
-VoxLink runs on Android phones and PoC radios, and on macOS, Windows and Linux desktops. An iPhone and iPad version is on its way to the App Store.
+VoxLink runs on Android phones and PoC radios, on iPhone and iPad, and on macOS, Windows and Linux desktops.
 
 ## Android
 
@@ -44,7 +44,28 @@ If you accidentally denied it: **Settings > Apps > VoxLink > Permissions > Micro
 
 ## iPhone and iPad
 
-VoxLink for iOS is distributed through the App Store rather than from this site. It's currently under review, so it isn't available to install just yet.
+VoxLink for iOS is distributed through the App Store rather than from this site.
+
+### Requirements
+
+- iOS 15.0 or later — iPadOS 15.0 or later on iPad
+- Internet connection (Wi-Fi or mobile data)
+- Reflector connection details from your club or admin: hostname, port, talkgroup number, and auth key
+
+### Install from the App Store
+
+1. Open the [**VoxLink listing on the App Store**](https://apps.apple.com/us/app/voxlink-ptt-for-svxlink/id6819157055).
+2. Tap **Get**.
+
+The **Download** menu on this site links to the same listing.
+
+### Permissions
+
+**Microphone** — Required for transmitting. iOS asks the first time you transmit — tap **Allow**.
+
+If you accidentally denied it: **iOS Settings > VoxLink > Microphone**.
+
+**Notifications** — Needed for monitored-talkgroup alerts and their **Switch** and **Mute for 1 Hour** actions. iOS asks on first launch; you can change it later in **iOS Settings > VoxLink > Notifications**.
 
 ---
 

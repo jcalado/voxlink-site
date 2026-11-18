@@ -9,7 +9,7 @@
 - **Servidores no macOS** — reconstruídos com folhas de formulário, alertas do sistema, edição de talkgroups no próprio local e reordenação arrastando a linha inteira.
 - **Consola PTT para janelas largas** — o palco de emissão ao lado de uma coluna com canais, atividade e estações, em macOS, Windows e Linux. Depende da largura e não da plataforma: uma janela estreita no computador mantém o layout de telemóvel, e os tablets Android e os dobráveis abertos também ficam com a consola.
 - **Vista de lista e detalhe nos Servidores** em janelas largas no computador, com talkgroups editáveis no próprio local.
-- **iPhone e iPad** — o VoxLink passa a compilar para iOS, com áudio encaminhado para auscultadores Bluetooth e retomado após uma interrupção como uma chamada telefónica, gravações visíveis na aplicação Ficheiros e um ícone Liquid Glass. O iOS é distribuído pela App Store e encontra-se em revisão.
+- **iPhone e iPad** — o VoxLink passa a compilar para iOS, com áudio encaminhado para auscultadores Bluetooth e retomado após uma interrupção como uma chamada telefónica, gravações visíveis na aplicação Ficheiros e um ícone Liquid Glass. O iOS é distribuído pela [App Store](https://apps.apple.com/us/app/voxlink-ptt-for-svxlink/id6819157055) e não a partir deste site.
 - **Ações nas notificações** em macOS e iOS — os alertas de talkgroups monitorizados ganham **Mudar** e **Silenciar 1 Hora**. O silêncio fica apenas em memória e termina ao reiniciar a aplicação.
 
 ### Alterado
